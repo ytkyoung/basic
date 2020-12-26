@@ -1,6 +1,11 @@
+import HomeStart from './pages/HomeStart';
+
 function App() {
   return (
-<h1>Film</h1>
+    <div className="App">
+      <h1>asdasd</h1>
+      <HomeStart />
+    </div>
   );
 }
 
