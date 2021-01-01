@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "title": "BRANDBEATS® PODCAST",
+    "date": "11.21.19 ",
+    "img": "images/think1.jpg",
+    "category": "BRANDBEATS",
+    "episode": "S3.E13",
+    "episode-title": "“ANALYTICS”"
+  },
+  {
+    "id": 1,
+    "title": "APPLIED® INSIGHTS NO/001",
+    "date": "11.15.19",
+    "img": "images/think2.jpg",
+    "category": "APPLIED",
+    "episode": "",
+    "episode-title": "“THE RISE OF UGLY”"
+  },
+  {
+    "id": 2,
+    "title": "BRANDBEATS® PODCAST",
+    "date": "11.13.19",
+    "img": "images/think3.jpg",
+    "category": "BRANDBEATS",
+    "episode": "S3.E12",
+    "episode-title": "“COMPLEXCON”"
+  },
+  {
+    "id": 3,
+    "title": "BRANDBEATS® PODCAST",
+    "date": "10.24.19",
+    "img": "images/think4.jpg",
+    "category": "BRANDBEATS",
+    "episode": "S3.E11",
+    "episode-title": "“SPIRITUALITY IN BRANDING”"
+  },
+  {
+    "id": 4,
+    "title": "BRANDBEATS® PODCAST",
+    "date": "08.27.19",
+    "img": "images/think5.jpg",
+    "category": "BRANDBEATS",
+    "episode": "S3.E10",
+    "episode-title": "“CURENT EVENTS”"
+  },
+  {
+    "id": 5,
+    "title": "BRANDBEATS® PODCAST",
+    "date": "09.24.19",
+    "img": "images/think6.jpg",
+    "category": "BRANDBEATS",
+    "episode": "S3.E09",
+    "episode-title": "“CAUSE CAMPAIGNS”"
+  }
+]
