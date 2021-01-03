@@ -5,7 +5,7 @@ import ServicesSection from '../components/ServicesSection';
 import FeaturedEngagements from '../components/FeaturedEngagements';
 import FeaturedNews from '../components/FeaturedNews';
 import Spotlight from '../components/Spotlight';
-import Test from '../components/Test';
+import Krisel from '../components/Krisel';
 
 const HomeStart = () => {
   return (
@@ -15,7 +15,7 @@ const HomeStart = () => {
       <FeaturedEngagements />
       <Spotlight />
       <FeaturedNews />
-      <Test />
+      <Krisel />
     </section>
   );
 };

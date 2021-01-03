@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import logo from '../img/logo.svg';
+
 // import menu from '../img/menu.svg';
 import { Link } from 'react-router-dom';
 import MenuContainer from '../components/MenuContainer';
-
+import Logo from '../components/Logo';
 const Nav = () => {
   return (
     <StyledNav>
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="logo basic" />
+          <Logo />
         </Link>
       </div>
       <ul>
@@ -28,19 +28,17 @@ const Nav = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li>
-          <Link to="/test">TEST</Link>
-        </li>
       </ul>
-      <DreiPunkteStyle>
+
+      <div className="three">
         <MenuContainer />
-      </DreiPunkteStyle>
+      </div>
     </StyledNav>
   );
 };
 
 const StyledNav = styled.nav`
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -48,44 +46,32 @@ const StyledNav = styled.nav`
   padding: 1rem 0rem;
   /* background: yellow; */
   a {
-    font-size: 3rem;
-    color: red;
+    font-size: 1.5rem;
+    color: #6d6d6d;
+    text-transform: uppercase;
   }
   ul {
     display: flex;
-    background-color: blue;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 60%;
+    background-color: #dbdbdb;
   }
   li {
-    padding-left: 10rem;
+    padding-left: 0rem;
     position: relative;
   }
   .logo {
     background-color: cyan;
+    flex: 1 1 20%;
   }
   .logo img {
-    width: 100%;
+    width: 10rem;
   }
-`;
-
-const DreiPunkteStyle = styled.div`
-  background-color: yellow;
-  a {
-    display: flex;
-    justify-content: flex-end;
-    background-color: green;
-  }
-  img {
+  .three {
+    flex: 1 1 20%;
     background-color: red;
-    width: 100%;
-  }
-  #theMenu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    transform: translate3d(-100vw, 0, 0);
-
-    width: 100vw;
-    height: 100vh;
   }
 `;
+
 export default Nav;

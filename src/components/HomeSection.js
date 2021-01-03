@@ -5,29 +5,29 @@ const HomeSection = () => {
   return (
     <>
       <HomeIntro>
-        <div className="home-title-teil1">
+        <div className="home-title1">
           <div className="hide">
-            <h2>
+            <h1>
               What's <span>next</span>
-            </h2>
+            </h1>
           </div>
           <div className="hide">
-            <h2> starts</h2>
+            <h1> starts</h1>
           </div>
         </div>
-        <div className="home-title-teil1">
+        <div className="home-title2">
           <div className="hide">
             <Here>
-              <Point>●</Point> <h2>HERE</h2>
+              <Point>●</Point> <h1>here</h1>
             </Here>
           </div>
         </div>
       </HomeIntro>
-      <div className="home-hero-video">
+      <HeroVideo>
         <video className="videoTag" autoPlay loop muted>
           <source src={hero} type="video/mp4" />
         </video>
-      </div>
+      </HeroVideo>
     </>
   );
 };
@@ -35,13 +35,29 @@ const HomeSection = () => {
 //Styled Components
 
 const HomeIntro = styled.div`
-  min-height: 90vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 5rem 10rem;
   background-color: #f58585;
+  .home-title1 {
+    flex: 1 1 70%;
+    padding-top: 3%;
+    align-self: flex-start;
+    background: yellow;
+    h1 {
+      letter-spacing: -2px;
+    }
+  }
+  .home-title2 {
+    flex: 1 1 30%;
+    align-self: flex-end;
+    background: #00ffaa;
+    h1 {
+      letter-spacing: -2px;
+    }
+  }
 `;
 
 const Here = styled.div`
@@ -53,10 +69,16 @@ const Here = styled.div`
 `;
 
 const Point = styled.div`
-  font-size: 6.8rem;
+  font-size: 9rem;
   color: green;
   position: relative;
-  top: -5px;
-  right: 10px;
+  right: 7%;
 `;
+
+const HeroVideo = styled.div`
+  .videoTag {
+    width: 100%;
+  }
+`;
+
 export default HomeSection;

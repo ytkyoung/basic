@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 class WorkServiceBox extends React.Component {
   constructor(props) {
@@ -39,7 +40,13 @@ class WorkServiceBox extends React.Component {
             <h3>{service.projects[0].title}</h3>
             <p>{service.projects[0].description}</p>
           </div>
-          <div className="box-box2">
+          <motion.div
+            className="box-box2"
+            whileHover={{ backgroundColor: '#b32a2a' }}
+            whileTap={{
+              scale: 0.8,
+            }}
+          >
             <div className="wrapper">
               <Link to={service.url}>
                 <img src={service.projects[1].mainImg} alt="" />
@@ -47,7 +54,7 @@ class WorkServiceBox extends React.Component {
             </div>
             <h3>{service.projects[1].title}</h3>
             <p>{service.projects[1].description}</p>
-          </div>
+          </motion.div>
         </SlotNo2>
       </Huhu>
     );
@@ -58,17 +65,14 @@ const Huhu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: red;
   border: 1px solid blue;
 `;
 
 const SlotNo1 = styled.div`
-  background: #cf0c2d;
   flex: 1 1 30%;
 `;
 
 const SlotNo2 = styled.div`
-  background: #c0fff7;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -85,18 +89,31 @@ const SlotNo2 = styled.div`
     video {
       width: 100%;
       object-fit: cover;
+      transform: scale(1.1);
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1);
+      }
     }
     img {
       width: 100%;
+      object-fit: cover;
+      transform: scale(1.1);
+      transition: transform 0.5s, filter 1.5s ease-in-out;
+      filter: grayscale(50%);
+    }
+    &:hover img {
+      filter: grayscale(0);
+      transform: scale(1);
     }
     border-left: 1px solid red;
   }
   .box-box2 {
-    background: #a20ccf;
     padding-left: 3rem;
     flex: 1 1 50%;
     overflow: hidden;
     img {
+      width: 100%;
       object-fit: cover;
       transform: scale(1.1);
       transition: transform 0.5s, filter 1.5s ease-in-out;

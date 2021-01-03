@@ -70,7 +70,7 @@ const Pos4 = styled.div`
   position: absolute;
   top: 40%;
   left: 55%;
-  z-index: 0;
+  z-index: 1;
   filter: grayscale(50%);
   &:hover {
     z-index: 100;

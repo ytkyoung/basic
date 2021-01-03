@@ -14,10 +14,6 @@ const ContactOffices = () => {
   );
 };
 
-const SnapStyle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-`;
+const SnapStyle = styled.div``;
 
 export default ContactOffices;

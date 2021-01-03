@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "number": "01",
+    "title": "Culture Manual® ©2018",
+    "subtitle": "Agency Culture & Onboarding",
+    "img": "images/selected-work1.jpg",
+    "text": "We're a world-class team of diverse individuals who are here to do great work as well as be great to work with. Explore our culture manual."
+  },
+  {
+    "id": 1,
+    "number": "01",
+    "title": "Culture Manual® ©2018",
+    "subtitle": "Agency Culture & Onboarding",
+    "img": "images/selected-work2.jpg",
+    "text": "We're a world-class team of diverse individuals who are here to do great work as well as be great to work with. Explore our culture manual."
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "Moves® ©2019",
+    "subtitle": "Our New HQ",
+    "img": "images/selected-work3.jpg",
+    "text": "When we moved into our new HQ, we put together a site experience providing an in-depth look into the two-year process imagining, designing, and developing our new office we call home."
+  },
+  {
+    "id": 3,
+    "number": "04",
+    "title": "Beats By Dre",
+    "subtitle": "Agency Culture & Onboarding",
+    "img": "images/selected-work4.jpg",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis vitae exercitationem."
+  },
+  {
+    "id": 4,
+    "number": "05",
+    "title": "Applied",
+    "subtitle": "Agency Culture & Onboarding",
+    "img": "images/selected-work5.jpg",
+    "text": "Applied® is our panel series and thought-leadership platform ."
+  }
+]

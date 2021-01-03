@@ -7,11 +7,15 @@ const WorkIntro = () => {
       <Intro>
         <div>
           <motion.h1
-            initial={{ y: -250 }}
+            initial={{ y: -550 }}
             animate={{ y: -10 }}
-            transition={{ delay: 0.3, duration: 2, type: 'tween' }}
+            transition={{ delay: 0.3, duration: 0.3, type: 'tween' }}
           >
-            EASY TO UNDERSTAND. IMPOSSIBLE TO IGNORE.
+            EASY TO UNDERSTAND.
+            <br />
+            ●IMPOSSIBLE
+            <br />
+            TO IGNORE.
           </motion.h1>
         </div>
         <div className="work-intro-title-part2">

@@ -19,7 +19,7 @@ const WorkServices = () => {
 };
 
 const WorkBox = styled.div`
-  background-color: yellow;
+  /* background-color: yellow; */
 `;
 
 export default WorkServices;

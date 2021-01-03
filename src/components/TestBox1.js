@@ -10,7 +10,7 @@ const TestBox1 = (props) => {
         <div className="hover-image">
           <img src={img} alt="" />
         </div>
-        <h1>test1</h1>
+        <h3>(01)</h3>
       </Box>
     </>
   );
@@ -22,7 +22,7 @@ const Box = styled.div`
   padding: 2rem;
   transition: all 0.5s ease;
   .hover-image {
-    width: 700px;
+    width: 500px;
     & img {
       width: 100%;
     }

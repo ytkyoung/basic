@@ -2,19 +2,19 @@
   {
     "id": 0,
     "title": "San Diego – CA",
-    "date": "11.21.19 ",
+    "officeNo": "01",
     "img": "images/SD.jpg"
   },
   {
     "id": 1,
     "title": "Bay Area – CA",
-    "date": "11.21.19 ",
+    "officeNo": "02",
     "img": "images/mtv.jpg"
   },
   {
     "id": 2,
     "title": "St. Louis – MO",
-    "date": "11.21.19 ",
+    "officeNo": "03",
     "img": "images/stl.jpg"
   }
 ]

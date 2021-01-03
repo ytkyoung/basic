@@ -4,6 +4,8 @@ import SctoGroteskABold from '../fonts/SctoGroteskA-Bold.woff2';
 import SctoGroteskAMedium from '../fonts/SctoGroteskA-Medium.woff2';
 import SctoGroteskARegular from '../fonts/SctoGroteskA-Regular.woff2';
 
+// #f4f4f4 / #252422 / #f9cdcd
+
 const GlobalStyle = createGlobalStyle`
 
 * {
@@ -41,36 +43,49 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
   button {
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 1rem 2rem;
-    border: 3px solid #23d997;
-    color: white;
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border: 1px solid #252422;
+    border-radius: 16px;
     transition: all 0.5s ease;
+    outline:none;
     &:hover {
-      background-color: #23d997;
+      background-color: #252422;
       color: white;
     }
   }
 
   h1 {
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Scto Grotesk A Medium';
+    text-transform: uppercase;
     font-size: 9rem;
-    font-family: 'Scto Grotesk A Bold';
+    line-height: 90%;
   }
 
   h2 {
-    font-weight: lighter;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Scto Grotesk A Bold';
+    line-height: 90%;
   }
   h3 {
-    font-weight: lighter;
     font-size: 2rem;
   }
   h4 {
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Scto Grotesk A Regular';
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 1.2rem;
+    font-family: 'Scto Grotesk A Regular';
+    text-transform: uppercase;
   }
 
   a {
@@ -91,29 +106,20 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
     line-height: 150%;
   }
+  input[type=text] {
+    width: 35vw;
+    padding: 12px 0px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 2rem;
+  }
+  textarea:focus, input:focus{
+    outline: none;
+  }
 
-  #roundButton {
-  background-color: #96D9FF;
-  margin-bottom: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 10px solid #0065A6;
-  outline: none;
-  transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
-}
 
-#roundButton:hover {
-  background-color: #96D9FF;
-  cursor: pointer;
-  border-color: #003557;
-  transform: scale(1.2, 1.2);
-}
-
-#roundButton:active {
-  border-color: #003557;
-  background-color: #FFF;
-}
 
 #flyoutMenu {
   width: 100vw;
@@ -146,6 +152,8 @@ const GlobalStyle = createGlobalStyle`
 #flyoutMenu h2 a:hover {
   text-decoration: underline;
 }
+
+
 `;
 
 export default GlobalStyle;

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "title": "WEBBY AWARDS",
+    "number": "/40",
+    "img": "images/hover-1.jpg"
+  },
+  {
+    "id": 1,
+    "title": "ADWEEK",
+    "number": "/01",
+    "img": "images/hover-2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "AWWWARDS",
+    "number": "/22",
+    "img": "images/hover-3.jpg"
+  },
+  {
+    "id": 3,
+    "title": "D&AD",
+    "number": "/01",
+    "img": "images/hover-4.jpg"
+  },
+  {
+    "id": 4,
+    "title": "ONE SHOW",
+    "number": "/03",
+    "img": "images/hover-5.jpg"
+  },
+  {
+    "id": 5,
+    "title": "THE FWA",
+    "number": "/07",
+    "img": "images/hover-6.jpg"
+  }
+]

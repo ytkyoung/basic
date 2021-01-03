@@ -11,7 +11,6 @@ import Thinking from './pages/Thinking';
 import Contact from './pages/Contact';
 import ServicesDetail from './pages/ServicesDetail';
 import Footer from './components/Footer';
-import TestFramer from './components/TestFramer';
 
 // Router
 import { Switch, Route } from 'react-router-dom';
@@ -43,9 +42,6 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
-          </Route>
-          <Route path="/test">
-            <TestFramer />
           </Route>
         </Switch>
         <Footer />

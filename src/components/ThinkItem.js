@@ -1,24 +1,35 @@
+import styled from 'styled-components';
+import { NewsStyle } from '../styles.js';
+import IconArrow from '../components/IconArrow';
+
 const Thinkitem = (props) => {
   return (
-    <div className="think-item">
-      <div className="think">
-        <div className="think-img">
-          <img src={props.think.img} alt="think" />
+    <ThinkNews>
+      <div className="news">
+        <div className="news-img">
+          <img src={props.news.img} alt="news" />
         </div>
-        <div className="think-title">
-          <h2>{props.think.title}</h2>
+        <div className="news-box">
+          <div className="news-title">
+            <h2>{props.news.title}</h2>
+          </div>
+          <div className="news-info">
+            <div className="news-category">
+              <h3>{props.news.category}</h3>
+            </div>
+            <div className="news-date">
+              <h3>{props.news.date}</h3>
+            </div>
+          </div>
         </div>
-        <div className="think-info">
-          <div className="think-category">
-            <h3>{props.think.category}</h3>
-          </div>
-          <div className="think-date">
-            <h3>{props.think.date}</h3>
-          </div>
+        <div className="news-arrow">
+          <IconArrow />
         </div>
       </div>
-    </div>
+    </ThinkNews>
   );
 };
+
+const ThinkNews = styled(NewsStyle)``;
 
 export default Thinkitem;

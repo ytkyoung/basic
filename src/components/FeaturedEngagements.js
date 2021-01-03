@@ -8,7 +8,7 @@ import { ThemeProvider } from 'styled-components';
 
 const FeaturedEngagements = () => {
   return (
-    <section>
+    <>
       <Featured>
         <div className="description">
           <h2>
@@ -24,13 +24,56 @@ const FeaturedEngagements = () => {
         </div>
       </Featured>
       <Button>Normal</Button>
-
       <ThemeProvider theme={theme}>
         <Button>Themed</Button>
       </ThemeProvider>
-    </section>
+    </>
   );
 };
+
+const Featured = styled(FlexTest)`
+  height: 80vh;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    color: red;
+  }
+  .description {
+    height: 50vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brands-cards {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background: red;
+    margin: 2em auto;
+    padding: 0 1em;
+    background: #04191b;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  .cards {
+    display: flex;
+    width: 100%;
+    background: #001e80;
+  }
+
+  .card {
+    margin: 2rem 10rem 2rem 0rem;
+    scroll-snap-align: center;
+    background-color: #00ff15;
+  }
+`;
 
 // Define our button, but with the use of props.theme this time
 const Button = styled.button`
@@ -55,16 +98,5 @@ Button.defaultProps = {
 const theme = {
   main: 'mediumseagreen',
 };
-
-const Featured = styled(FlexTest)`
-  background: lightgray;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  h2 {
-    padding-bottom: 5rem;
-    color: red;
-  }
-`;
 
 export default FeaturedEngagements;

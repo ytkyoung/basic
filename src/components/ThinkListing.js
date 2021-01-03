@@ -6,18 +6,14 @@ const ThinkListing = () => {
   return (
     <SnapStyle>
       <div className="think-lists">
-        {data.map((think, index) => (
-          <ThinkItem key={index} think={think} />
+        {data.map((news, index) => (
+          <ThinkItem key={index} news={news} />
         ))}
       </div>
     </SnapStyle>
   );
 };
 
-const SnapStyle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-`;
+const SnapStyle = styled.div``;
 
 export default ThinkListing;

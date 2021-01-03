@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import TestHeaderMenu from '../components/TestHeaderMenu';
+import data from '../data/projects.json';
+import ProjectItemTest from '../components/ProjectItemTest';
 
 class Menu extends Component {
   render() {
@@ -20,7 +21,11 @@ class Menu extends Component {
           <h2>aasdasdas</h2>
 
           <button onMouseDown={this.props.handleMouseDown}>TEST</button>
-          <TestHeaderMenu />
+          <div className="project-lists">
+            {data.map((project, index) => (
+              <ProjectItemTest key={index} project={project} />
+            ))}
+          </div>
         </div>
       </TestWrapper>
     );
@@ -28,7 +33,11 @@ class Menu extends Component {
 }
 const TestWrapper = styled.div`
   background: magenta;
-  height: 100%;
+  .project-lists {
+    display: flex;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
 `;
 
 export default Menu;

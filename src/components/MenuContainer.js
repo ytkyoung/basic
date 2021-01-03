@@ -3,8 +3,8 @@ import MenuButton from './MenuButton';
 import Menu from './Menu';
 
 class MenuContainer extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
 
     this.state = {
       visible: false,
