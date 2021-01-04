@@ -94,13 +94,13 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
   }
   h5 {
     font-size: 1.2rem;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   a {
