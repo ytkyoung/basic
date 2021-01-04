@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
-
 import SctoGroteskABold from '../fonts/SctoGroteskA-Bold.woff2';
 import SctoGroteskAMedium from '../fonts/SctoGroteskA-Medium.woff2';
 import SctoGroteskARegular from '../fonts/SctoGroteskA-Regular.woff2';
+
+import { createGlobalStyle } from 'styled-components';
 
 // #f4f4f4 / #252422 / #f9cdcd
 
