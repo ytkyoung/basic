@@ -4,16 +4,31 @@ import AboutBrand from '../components/AboutBrand';
 import AboutSnapshot from '../components/AboutSnapshot';
 import AboutCapabities from '../components/AboutCapabities';
 import AboutAwards from '../components/AboutAwards';
+// import KriselMisel from '../components/KriselMisel';
+import ScrollTop from '../components/ScrollTop';
+
+//Animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
+
 const About = () => {
   return (
-    <div>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      // style={{ backgroundColor: 'rgba(244, 0, 0, 0.31)' }}
+    >
       <AboutIntro />
       <AboutGallery />
       <AboutBrand />
       <AboutSnapshot />
       <AboutCapabities />
       <AboutAwards />
-    </div>
+      {/* <KriselMisel /> */}
+      <ScrollTop />
+    </motion.div>
   );
 };
 

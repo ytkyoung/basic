@@ -18,9 +18,12 @@ class Menu extends Component {
           // onMouseDown={this.props.handleMouseDown}
           className={visibility}
         >
-          <h2>aasdasdas</h2>
-
-          <button onMouseDown={this.props.handleMouseDown}>TEST</button>
+          <div className="button-box">
+            <h2>(06 )Internal Works</h2>
+            <button onMouseDown={this.props.handleMouseDown}>
+              <h2>x</h2>
+            </button>
+          </div>
           <div className="project-lists">
             {data.map((project, index) => (
               <ProjectItemTest key={index} project={project} />
@@ -33,10 +36,21 @@ class Menu extends Component {
 }
 const TestWrapper = styled.div`
   background: magenta;
+
+  .button-box {
+    padding: 0 3rem;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .project-lists {
     display: flex;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+  }
+  button {
+    border: 50%;
   }
 `;
 

@@ -72,7 +72,7 @@ const AwardsWrapper = styled.div`
   .awards-list {
     position: relative;
     mix-blend-mode: difference;
-    z-index: 1;
+    z-index: 4;
     &:hover {
       .award-title {
         opacity: 0.1;

@@ -1,14 +1,22 @@
 import WorkIntro from '../components/WorkIntro';
 import WorkServices from '../components/WorkServices';
-import Krisel from '../components/Krisel';
+import ScrollTop from '../components/ScrollTop';
+//Animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const Work = () => {
   return (
-    <>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <WorkIntro />
       <WorkServices />
-      <Krisel />
-    </>
+      <ScrollTop />
+    </motion.div>
   );
 };
 

@@ -1,11 +1,12 @@
-import basicLogo from '../img/logo_pink.svg';
+// import basicLogo from '../img/logo_pink.svg';
 import styled from 'styled-components';
+import LogoAni from '../components/LogoAni2';
 
 const AboutBrand = () => {
   return (
     <>
       <AboutBrandLogo>
-        <img src={basicLogo} alt="" />
+        <LogoAni />
       </AboutBrandLogo>
     </>
   );
@@ -17,6 +18,10 @@ const AboutBrandLogo = styled.div`
   border-bottom: 2px solid green;
   & img {
     width: 50%;
+  }
+  .container-svg {
+    width: 50%;
+    /* fill: white; */
   }
 `;
 

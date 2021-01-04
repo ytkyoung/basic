@@ -1,28 +1,21 @@
 import { Intro } from '../styles.js';
 import { motion } from 'framer-motion';
+import { titleAnim, fade, titleDot } from '../animation';
 
 const WorkIntro = () => {
   return (
     <>
       <Intro>
         <div>
-          <motion.h1
-            initial={{ y: -550 }}
-            animate={{ y: -10 }}
-            transition={{ delay: 0.3, duration: 0.3, type: 'tween' }}
-          >
-            EASY TO UNDERSTAND.
-            <br />
-            ●IMPOSSIBLE
-            <br />
-            TO IGNORE.
-          </motion.h1>
+          <motion.h1 variants={titleAnim}>EASY TO UNDERSTAND.</motion.h1>
+          <motion.h1 variants={titleDot}>●IMPOSSIBLE</motion.h1>
+          <motion.h1 variants={titleAnim}>TO IGNORE.</motion.h1>
         </div>
         <div className="work-intro-title-part2">
-          <p>
+          <motion.p variants={fade}>
             The work we create lives at the intersection of clarity and surprise
             and positions brands in culture through shared values and ideals.
-          </p>
+          </motion.p>
         </div>
       </Intro>
     </>

@@ -1,14 +1,16 @@
 import { IntroPlane } from '../styles';
+import { motion } from 'framer-motion';
+import { titleAnim, fade, titleDot } from '../animation';
 
 const ThinkIntro = () => {
   return (
     <IntroPlane>
-      <div className="think-intro">
+      <motion.div className="think-intro" variants={titleAnim}>
         <h2>THINKING</h2>
-      </div>
-      <div className="think-point">
+      </motion.div>
+      <motion.div className="think-point" variants={(titleDot, fade)}>
         <h2>●</h2>
-      </div>
+      </motion.div>
     </IntroPlane>
   );
 };

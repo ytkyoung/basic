@@ -1,29 +1,31 @@
 import hero from '../img/Hero.mp4';
 import styled from 'styled-components';
+import { titleAnim, fade, titleDot } from '../animation';
+import { motion } from 'framer-motion';
 
 const HomeSection = () => {
   return (
     <>
       <HomeIntro>
-        <div className="home-title1">
+        <motion.div className="home-title1">
           <div className="hide">
-            <h1>
+            <motion.h1 variants={titleAnim}>
               What's <span>next</span>
-            </h1>
+            </motion.h1>
           </div>
           <div className="hide">
-            <h1> starts</h1>
+            <motion.h1 variants={titleAnim}> starts</motion.h1>
           </div>
-        </div>
-        <div className="home-title2">
+        </motion.div>
+        <motion.div className="home-title2" variants={titleDot}>
           <div className="hide">
             <Here>
               <Point>●</Point> <h1>here</h1>
             </Here>
           </div>
-        </div>
+        </motion.div>
       </HomeIntro>
-      <HeroVideo>
+      <HeroVideo variants={fade}>
         <video className="videoTag" autoPlay loop muted>
           <source src={hero} type="video/mp4" />
         </video>
@@ -75,7 +77,7 @@ const Point = styled.div`
   right: 7%;
 `;
 
-const HeroVideo = styled.div`
+const HeroVideo = styled(motion.div)`
   .videoTag {
     width: 100%;
   }

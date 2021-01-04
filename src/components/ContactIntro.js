@@ -1,27 +1,29 @@
 import ContactImg from '../img/Contact-Header.jpg';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { titleAnim, fade, photoAnim, titleDot } from '../animation';
 
 const ContactIntro = () => {
   return (
     <ContactStyle>
       <div className="contact-hero">
-        <img src={ContactImg} alt="" />
+        <motion.img src={ContactImg} alt="Contact" variants={photoAnim} />
       </div>
       <div className="contact-intro">
         <div className="contact-title">
-          <h1>B /</h1>
-          <h1>CONTACT</h1>
-          <h4>
+          <motion.h1 variants={(titleAnim, fade)}>B /</motion.h1>
+          <motion.h1 variants={(titleAnim, fade)}>CONTACT</motion.h1>
+          <motion.h4 variants={fade}>
             EASY TO UNDERSTAND.
             <br /> IMPOSSIBLE TO IGNORE.™
             <br /> BASIC®, INC 10 - 20©
-          </h4>
+          </motion.h4>
         </div>
         <div className="contact-box">
           <div className="contact-point">
-            <h2>●</h2>
+            <motion.h2 variants={titleDot}>●</motion.h2>
           </div>
-          <div className="email-box">
+          <motion.div className="email-box" variants={fade}>
             <div className="contact-email">
               <h2>NEW BUSINESS</h2>
               <div className="email">
@@ -38,8 +40,8 @@ const ContactIntro = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="email-box">
+          </motion.div>
+          <motion.div className="email-box" variants={fade}>
             <div className="contact-email">
               <h2>NEW BUSINESS</h2>
               <div className="email">
@@ -56,7 +58,7 @@ const ContactIntro = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </ContactStyle>

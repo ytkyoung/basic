@@ -1,23 +1,25 @@
 import styled from 'styled-components';
 
-const Krisel = () => {
+const KriselMisel = () => {
   return <SpotTest></SpotTest>;
 };
 
 const SpotTest = styled.section`
-  background-color: rgb(0, 0, 0);
   h1 {
     font-size: 4rem;
   }
+  /* .page-header {
+    height: 100vh;
+  } */
 
   &:after {
-    z-index: -1;
+    z-index: -200;
     animation: grain 8s steps(10) infinite;
-    background-image: url(/images/Rectangle.png);
+    background-image: url(/images/img-noise-350x350.png);
     content: '';
     height: 300%;
     left: -50%;
-    opacity: 0.2;
+    opacity: 1;
     position: fixed;
     top: -110%;
     width: 200%;
@@ -58,4 +60,4 @@ const SpotTest = styled.section`
   }
 `;
 
-export default Krisel;
+export default KriselMisel;

@@ -3,10 +3,15 @@ import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import MovieState from '../data/test.json';
 // import { MovieState } from '../movieState';
+import ScrollTop from '../components/ScrollTop';
+
+//Animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const ServicesDetail = () => {
   const history = useHistory();
-  console.log(history);
+  // console.log(history);
   const url = history.location.pathname;
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
@@ -21,23 +26,29 @@ const ServicesDetail = () => {
   return (
     <>
       {movie && (
-        <Details>
+        <Details
+          exit="exit"
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+        >
           <Headline>
             <h2>{movie.title}</h2>
-            <h2>{movie.projects[1].mainImg}</h2>
+
             <img src={movie.projects[1].mainImg} alt="movie" />
           </Headline>
+          <ScrollTop />
         </Details>
       )}
     </>
   );
 };
 
-const Details = styled.div`
-  background: red;
+const Details = styled(motion.div)`
+  /* background: red; */
 `;
 const Headline = styled.div`
-  background: blue;
+  /* background: blue; */
 `;
 
 export default ServicesDetail;

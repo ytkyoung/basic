@@ -44,9 +44,9 @@ const FeaturedStyle = styled.div`
     }
   }
   .news-title {
-    width: 35%;
+    width: 40%;
     h2 {
-      text-transform: none;
+      text-transform: uppercase;
       line-height: 110%;
       font-family: 'Scto Grotesk A Regular';
     }

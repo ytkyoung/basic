@@ -1,10 +1,14 @@
 import styled from 'styled-components';
-
 // import menu from '../img/menu.svg';
 import { Link } from 'react-router-dom';
 import MenuContainer from '../components/MenuContainer';
 import Logo from '../components/Logo';
+import Krisel from '../components/Krisel';
+import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
+
 const Nav = () => {
+  const { pathname } = useLocation();
   return (
     <StyledNav>
       <div className="logo">
@@ -15,24 +19,50 @@ const Nav = () => {
       <ul>
         <li>
           <Link to="/work">Work</Link>
+          <Line
+            transition={{ duration: 0.3 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/work' ? '100%' : '0' }}
+          />
         </li>
         <li>
           <Link to="/about">About</Link>
+          <Line
+            transition={{ duration: 0.3 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/about' ? '100%' : '0' }}
+          />
         </li>
         <li>
           <Link to="/news">News</Link>
+          <Line
+            transition={{ duration: 0.3 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/news' ? '100%' : '0' }}
+          />
         </li>
         <li>
           <Link to="/thinking">Thinking</Link>
+          <Line
+            transition={{ duration: 0.3 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/thinking' ? '100%' : '0' }}
+          />
         </li>
         <li>
           <Link to="/contact">Contact</Link>
+          <Line
+            transition={{ duration: 0.3 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/contact' ? '100%' : '0' }}
+          />
         </li>
       </ul>
 
       <div className="three">
         <MenuContainer />
       </div>
+      <Krisel />
     </StyledNav>
   );
 };
@@ -44,7 +74,10 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0rem;
-  /* background: yellow; */
+  /* background: #252422; */
+  /* position: sticky;
+  top: 0;
+  z-index: 10; */
   a {
     font-size: 1.5rem;
     color: #6d6d6d;
@@ -72,6 +105,15 @@ const StyledNav = styled.nav`
     flex: 1 1 20%;
     background-color: red;
   }
+`;
+
+const Line = styled(motion.div)`
+  height: 0.1rem;
+  background: black;
+  width: 50%;
+  position: absolute;
+  bottom: -30%;
+  left: 0%;
 `;
 
 export default Nav;
