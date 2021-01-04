@@ -48,7 +48,8 @@ const FeaturedStyle = styled.div`
     h2 {
       text-transform: uppercase;
       line-height: 110%;
-      font-family: 'Scto Grotesk A Regular';
+      font-family: 'Inter', sans-serif;
+      font-weight: regular;
     }
   }
   .news-box {

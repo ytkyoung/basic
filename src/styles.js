@@ -24,7 +24,8 @@ export const IntroPlane = styled.section`
     color: red;
     background: blue;
     font-size: 1.8rem;
-    font-family: 'Scto Grotesk A Medium';
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
   }
 `;
 
@@ -44,7 +45,8 @@ export const Intro = styled.section`
     color: red;
     background: blue;
     font-size: 1.8rem;
-    font-family: 'Scto Grotesk A Medium';
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
   }
   & div:nth-child(1) {
     flex: 1 1 50%;
@@ -91,6 +93,7 @@ export const NewsStyle = styled.div`
     h2 {
       text-transform: none;
       line-height: 100%;
+      font-weight: 500;
     }
   }
   .news-box {

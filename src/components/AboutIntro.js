@@ -58,7 +58,8 @@ const AboutIntroStyle = styled.section`
 
   p {
     font-size: 3rem;
-    font-family: 'Scto Grotesk A Medium';
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
     line-height: 110%;
   }
 `;

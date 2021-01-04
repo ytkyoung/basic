@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     margin: 0 auto;
     padding: 0 5%;
-    font-family: 'Scto Grotesk A Regular';
+    font-family: 'Inter', sans-serif;
     background: transparent;
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -71,8 +71,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-weight: 700;
-    font-family: 'Scto Grotesk A Medium';
+    font-weight: medium;
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     font-size: 12rem;
     line-height: 90%;
@@ -83,7 +83,8 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 3rem;
-    font-family: 'Scto Grotesk A Bold';
+    font-weight: regular;
+    font-family: 'Inter', sans-serif;
     line-height: 90%;
   }
   h3 {
@@ -91,13 +92,15 @@ const GlobalStyle = createGlobalStyle`
   }
   h4 {
     font-size: 1.6rem;
-    font-family: 'Scto Grotesk A Regular';
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+    font-weight: 400;
   }
   h5 {
     font-size: 1.2rem;
-    font-family: 'Scto Grotesk A Regular';
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+    font-weight: 400;
   }
 
   a {

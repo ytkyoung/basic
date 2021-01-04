@@ -80,7 +80,8 @@ const FooterStyle = styled.section`
     align-items: center;
     h2 {
       width: 80%;
-      font-family: 'Scto Grotesk A Regular';
+      font-family: 'Inter', sans-serif;
+      font-weight: regular;
     }
   }
   .brand-logo-icon {
@@ -140,7 +141,8 @@ const FooterStyle = styled.section`
     }
     ul li {
       font-size: 1.6rem;
-      font-family: 'Scto Grotesk A Regular';
+      font-family: 'Inter', sans-serif;
+      font-weight: regular;
     }
     .offices {
       padding-right: 20%;

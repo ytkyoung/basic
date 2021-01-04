@@ -26,7 +26,8 @@ const SnapStyle = styled.section`
   .news-title {
     h2 {
       color: #004d80;
-      font-family: 'Scto Grotesk A Medium';
+      font-family: 'Inter', sans-serif;
+      font-weight: medium;
     }
   }
 `;

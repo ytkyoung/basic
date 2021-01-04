@@ -30,6 +30,12 @@ const NewsItem = (props) => {
   );
 };
 
-const NewsItemStyle = styled(NewsStyle)``;
+const NewsItemStyle = styled(NewsStyle)`
+  h2 {
+    text-transform: none;
+    line-height: 100%;
+    font-weight: 500;
+  }
+`;
 
 export default NewsItem;
