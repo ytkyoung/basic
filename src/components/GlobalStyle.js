@@ -8,6 +8,25 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
+:root {
+  --header1: calc(1.5rem + 1vw);
+  --header2: 1.7rem;
+  --header3: 1.6rem;
+  --header4: 1.45rem;
+  --big: 2.5rem;
+  --text: 1.4rem;
+  --main-color: #252422;
+  --secondary-color: #f9cdcd;
+  --special-color: #f4f4f4;
+  --special2-color: #252422;
+  --line-height: 2.3rem;
+  --font-bold: "Scto Grotesk A Bold";
+  --font-medium: "Scto Grotesk A Medium";
+  --font-regular: "Scto Grotesk A Regular";
+  scroll-behavior: smooth;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     src: local('SctoGroteskA-Bold'), local('SctoGroteskA-Bold'),
     url(${SctoGroteskABold}) format('woff2'),
     }
+
   @font-face {
     font-family: 'Scto Grotesk A Medium';
     src: local('SctoGroteskA-Medium'), local('SctoGroteskA-Medium'),
@@ -33,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
+
     /* @media (max-width: 1700px) {
       font-size: 80%;
     }
@@ -46,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     margin: 0 auto;
     padding: 0 5%;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     background: transparent;
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -72,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-weight: medium;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-bold);
     text-transform: uppercase;
     font-size: 12rem;
     line-height: 90%;
@@ -84,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 3rem;
     font-weight: regular;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-bold);
     line-height: 90%;
   }
   h3 {
@@ -168,7 +188,17 @@ const GlobalStyle = createGlobalStyle`
   text-decoration: underline;
 }
 
+::-moz-selection {
+  color: #fff;
+  background: var(--special2-color);
+  text-shadow: none;
+}
 
+::selection {
+  color: #fff;
+  background: var(--special2-color);
+  text-shadow: none;
+}
 `;
 
 export default GlobalStyle;
