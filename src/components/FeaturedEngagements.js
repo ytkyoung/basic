@@ -12,7 +12,8 @@ const FeaturedEngagements = () => {
       <Featured>
         <div className="description">
           <h2>
-            FEATURED <span>ENGAGEMENTS</span>
+            FEATURED <br />
+            ENGAGEMENTS
           </h2>
         </div>
         <div className="brands-cards">
@@ -39,11 +40,10 @@ const Featured = styled(FlexTest)`
   flex-direction: column;
   h2 {
     font-size: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
   .description {
     height: 40vh;
-    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,6 +65,11 @@ const Featured = styled(FlexTest)`
   .card {
     margin: 2rem 10rem 2rem 0rem;
     scroll-snap-align: center;
+    &:last-child {
+      img {
+        width: 35%;
+      }
+    }
   }
 `;
 

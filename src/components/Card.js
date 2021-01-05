@@ -6,9 +6,9 @@ const Card = (props) => {
   return (
     <div className="card">
       <CardItem>
-        <BrandLogo>
+        <div className="brand-logo">
           <img src={props.brand.icon} alt={props.brand.title} />
-        </BrandLogo>
+        </div>
         <div className="card-line"></div>
         <div className="card-title">
           <h3>{props.brand.title}</h3>
@@ -24,11 +24,13 @@ const Card = (props) => {
 
 const CardItem = styled.div`
   width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-
+  .brand-logo {
+    width: 50%;
+    height: 50px;
+    img {
+      width: 70%;
+    }
+  }
   .card-line {
     background-color: var(--color-font-black);
     height: 0.1rem;
@@ -43,14 +45,6 @@ const CardItem = styled.div`
     h3 {
       padding: 10rem 0rem 1rem 0rem;
     }
-  }
-`;
-
-const BrandLogo = styled.div`
-  width: 40%;
-  padding-bottom: 3rem;
-  img {
-    width: 100%;
   }
 `;
 
