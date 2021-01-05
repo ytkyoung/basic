@@ -1,20 +1,11 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const ProjectItemTest = (props) => {
   return (
     <TestStyle>
       <div className="showhim">
-        <motion.img
-          src={props.project.img}
-          alt={props.project.title}
-          whileHover={{
-            scaleY: 1.1,
-            type: 'tween',
-            transition: { duration: 1 },
-          }}
-          whileTap={{ scale: 0.9 }}
-        />
+        <img src={props.project.img} alt={props.project.title} />
         <h2>{props.project.title} </h2>
         <h3>{props.project.subtitle}</h3>
         <div className="showme">

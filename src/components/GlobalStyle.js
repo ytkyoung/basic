@@ -165,6 +165,7 @@ const GlobalStyle = createGlobalStyle`
               cubic-bezier(0, .52, 0, 1);
   overflow: scroll;
   z-index: 1000;
+  background: yellow;
 }
 
 #flyoutMenu.hide {
