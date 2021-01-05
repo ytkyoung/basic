@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import MenuContainer from '../components/MenuContainer';
 import Logo from '../components/Logo';
-import Krisel from '../components/Krisel';
+// import Krisel from '../components/Krisel';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
@@ -62,7 +62,7 @@ const Nav = () => {
       <div className="three">
         <MenuContainer />
       </div>
-      <Krisel />
+      {/* <Krisel /> */}
     </StyledNav>
   );
 };
@@ -74,10 +74,10 @@ const StyledNav = styled(motion.nav)`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0rem;
-  /* background: #252422; */
-  /* position: sticky;
+
+  position: sticky;
   top: 0;
-  z-index: 10; */
+  z-index: 10;
   a {
     font-size: 1.5rem;
     color: var(--color-font-black);

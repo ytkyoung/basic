@@ -11,6 +11,7 @@ import Thinking from './pages/Thinking';
 import Contact from './pages/Contact';
 import ServicesDetail from './pages/ServicesDetail';
 import Footer from './components/Footer';
+import Krisel from './components/Krisel';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -50,6 +51,7 @@ function App() {
           </Switch>
         </AnimatePresence>
         <Footer />
+        <Krisel />
       </>
     </div>
   );

@@ -5,6 +5,8 @@ const KriselMisel = () => {
 };
 
 const SpotTest = styled.section`
+  z-index: -2020;
+  height: 10vh;
   h1 {
     font-size: 4rem;
   }
