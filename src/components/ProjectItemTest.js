@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ProjectItemTest = (props) => {
   return (
     <TestStyle>
-      <div className="showhim">
+      <div className="showhi">
         <img src={props.project.img} alt={props.project.title} />
         <h2>{props.project.title} </h2>
         <h3>{props.project.subtitle}</h3>
@@ -21,45 +21,55 @@ const ProjectItemTest = (props) => {
 };
 
 const TestStyle = styled.div`
+  padding: 0rem 3rem;
   height: 80vh;
-  background: red;
   display: flex;
   justify-content: center;
-
+  border-left: 1px solid #f9cdcd;
+  color: #f9cdcd;
   .showme {
-    width: 400px;
+    width: 35rem;
     overflow: hidden; // Hide the element content, while height = 0
     height: 0;
     opacity: 0;
     transition: max-height 600ms 0ms, opacity 600ms 0ms;
-    background: blue;
     scroll-snap-align: center;
-    background-color: #00ff15;
+    p {
+      color: #f9cdcd;
+    }
+    button {
+      color: #f4f4f4;
+      padding: 0;
+    }
   }
-
-  .showhim img {
+  .showhi {
+    h2 {
+      margin-top: 3rem;
+    }
+  }
+  .showhi img {
     width: 100%;
     object-fit: cover;
     transition: all 1s ease-in-out;
   }
 
-  .showhim:hover .showme {
+  .showhi:hover .showme {
     height: auto;
     opacity: 1;
   }
 
-  .showhim:hover img {
+  .showhi:hover img {
     height: auto;
     opacity: 1;
-    width: 400px;
+    width: 35rem;
     max-height: 200px;
     object-fit: cover;
   }
-  .showhim:hover .hideme {
+  .showhi:hover .hideme {
     height: auto;
     opacity: 1;
   }
-  .showhim:hover ~ .hideme2 {
+  .showhi:hover ~ .hideme2 {
     height: auto;
     opacity: 1;
   }
