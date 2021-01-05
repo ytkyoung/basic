@@ -70,10 +70,7 @@ const Footer = () => {
 };
 
 const FooterStyle = styled.section`
-  background: yellow;
-
   .footer-intro {
-    background: #0051ff;
     height: 30vh;
     display: flex;
     justify-content: space-between;
@@ -86,25 +83,21 @@ const FooterStyle = styled.section`
   }
   .brand-logo-icon {
     flex: 1 2 50%;
-    background: orange;
     img {
       width: 15%;
     }
   }
   .footer-bottom {
     height: 30vh;
-    background: red;
     display: flex;
   }
   .footer-title {
     flex: 1 2 50%;
   }
   .footer-email {
-    background: lime;
     flex: 1 2 50%;
   }
   .box1 {
-    background: magenta;
     justify-content: space-between;
     h2 {
       font-size: 2rem;
@@ -115,22 +108,19 @@ const FooterStyle = styled.section`
     justify-content: space-between;
     align-items: center;
     padding-right: 20%;
-    background: #45d04c;
     .email-arrow {
-      background: blue;
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
   }
   .line {
-    height: 0.3rem;
+    height: 0.1rem;
     width: 81%;
-    background: red;
+    background: var(--color-font-black);
   }
   .footer-overview {
     flex: 1 4 50%;
-    background: #00ffff;
     display: flex;
     justify-content: space-between;
     h2 {

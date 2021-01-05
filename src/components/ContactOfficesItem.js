@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const ContactOfficesItem = (props) => {
+  console.log(props.office.id);
   return (
     <OfficeStyle>
       <SlotNo1>
-        <h2>Office</h2>
+        <h2>Office 0{props.office.id + 1}</h2>
       </SlotNo1>
       <SlotNo2>
         <div className="box-box1">
@@ -28,16 +29,19 @@ const ContactOfficesItem = (props) => {
 };
 
 const OfficeStyle = styled.div`
-  background: magenta;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #252422;
+  /* border-top: 1px solid #252422; */
 `;
 
 const SlotNo1 = styled.div`
   flex: 1 1 30%;
-  background: green;
+  align-self: flex-start;
 `;
 
 const SlotNo2 = styled.div`
@@ -45,20 +49,20 @@ const SlotNo2 = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1 1 70%;
-  background: #002d80;
+
+  border-left: 1px solid #252422;
+  padding-bottom: 3rem;
+
   .wrapper {
-    height: 70rem;
     overflow: hidden;
   }
 
   .box-box1 {
-    background: #0cb8cf;
-    /* padding-left: 3rem; */
+    padding-left: 3rem;
     flex: 1 1 50%;
     img {
       width: 100%;
     }
-    border-left: 1px solid red;
   }
   .box-box2 {
     padding-left: 3rem;
@@ -74,6 +78,11 @@ const SlotNo2 = styled.div`
       filter: grayscale(0);
       transform: scale(1);
     }
+  }
+  .office-date {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
   }
 `;
 

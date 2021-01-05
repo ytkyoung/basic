@@ -28,7 +28,7 @@ const ContactFollow = () => {
 
         <div className="stay">
           <div className="box1">
-            <h2>Stay in Contact</h2>
+            <h2>STAY IN THE KNOW</h2>
           </div>
           <div className="box2">
             <form action="/">
@@ -47,19 +47,18 @@ const Follow = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: red;
   .follow {
     flex: 1 1 30%;
   }
   .social {
     flex: 1 1 33.3333%;
     li {
-      padding: 2.2rem 0rem;
+      padding: 1.5rem 0rem;
     }
     a {
       font-size: 1.8rem;
       text-decoration: underline;
-      color: black;
+      color: var(--color-font-black);
     }
   }
   .wrapper-box {
@@ -77,17 +76,14 @@ const Follow = styled.section`
     }
   }
   .line {
-    height: 0.3rem;
-    background: #35edce;
-  }
-  .box1 {
-    background: magenta;
+    height: 0.1rem;
+    width: 100%;
+    background: var(--color-font-black);
   }
 
   .box2 {
-    background: #45d04c;
     .email-arrow {
-      background: blue;
+      background: transparent;
     }
   }
 `;

@@ -16,12 +16,20 @@ class WorkServiceBox extends React.Component {
       <Huhu>
         <SlotNo1>
           <h3>{service.date}</h3>
-          <h2>{service.title}</h2>
-          <p>{service.text}</p>
-          <button>Learn more</button>
+          <div className="learn">
+            <h2>{service.title}</h2>
+            <p>{service.text}</p>
+            <button>Learn more</button>
+          </div>
         </SlotNo1>
         <SlotNo2>
-          <div className="box-box1">
+          <motion.div
+            className="box-box1"
+            whileHover={{ backgroundColor: 'rgba(37, 36, 34, 0.03)' }}
+            whileTap={{
+              scale: 0.8,
+            }}
+          >
             <div className="wrapper">
               {service.projects[0].video ? (
                 <video className="videoTag" autoPlay loop muted>
@@ -39,10 +47,10 @@ class WorkServiceBox extends React.Component {
 
             <h3>{service.projects[0].title}</h3>
             <p>{service.projects[0].description}</p>
-          </div>
+          </motion.div>
           <motion.div
             className="box-box2"
-            whileHover={{ backgroundColor: '#b32a2a' }}
+            whileHover={{ backgroundColor: 'rgba(37, 36, 34, 0.03)' }}
             whileTap={{
               scale: 0.8,
             }}
@@ -63,13 +71,23 @@ class WorkServiceBox extends React.Component {
 
 const Huhu = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid blue;
+  padding: 3rem 0rem;
+  border-top: 0.1rem solid #252422;
+  &:last-child {
+    border-bottom: 0.1rem solid #252422;
+    margin-bottom: 6rem;
+  }
 `;
 
 const SlotNo1 = styled.div`
   flex: 1 1 30%;
+  padding: 0rem 2rem 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .learn {
+    margin-bottom: 50%;
+  }
 `;
 
 const SlotNo2 = styled.div`
@@ -77,13 +95,19 @@ const SlotNo2 = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1 1 70%;
+  h3 {
+    padding-top: 2rem;
+  }
+  p {
+    padding-right: 2rem;
+    width: 60%;
+    font-family: var(--font-medium);
+  }
   .wrapper {
-    height: 70rem;
     overflow: hidden;
   }
 
   .box-box1 {
-    background: #0cb8cf;
     padding-left: 3rem;
     flex: 1 1 50%;
     video {
@@ -106,7 +130,7 @@ const SlotNo2 = styled.div`
       filter: grayscale(0);
       transform: scale(1);
     }
-    border-left: 1px solid red;
+    border-left: 1px solid #252422;
   }
   .box-box2 {
     padding-left: 3rem;

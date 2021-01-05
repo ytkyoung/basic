@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const FlexTest = styled.section`
   height: 90vh;
-  background-color: lightblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +9,6 @@ export const FlexTest = styled.section`
 
 export const IntroPlane = styled.section`
   height: 30vh;
-  background-color: #bfe6ad;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +29,6 @@ export const IntroPlane = styled.section`
 
 export const Intro = styled.section`
   height: 85vh;
-  background-color: #bfe6ad;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +39,6 @@ export const Intro = styled.section`
   }
 
   & p {
-    color: red;
-    background: blue;
     font-size: 1.8rem;
     font-family: var(--font-medium);
     font-weight: medium;
@@ -52,13 +47,11 @@ export const Intro = styled.section`
     flex: 1 1 50%;
     padding-top: 8%;
     align-self: flex-start;
-    background: red;
   }
   & div:nth-child(2) {
     flex: 1 1 50%;
     padding: 2rem;
     align-self: flex-end;
-    background: green;
   }
 `;
 
@@ -75,9 +68,8 @@ export const Intro = styled.section`
 // `;
 
 export const NewsStyle = styled.div`
-  border-top: 2px solid #00ff2a;
+  border-top: 1px solid #252422;
   padding: 2.2rem 0rem 6.7rem 0rem;
-  background: green;
   .news {
     display: flex;
     justify-content: space-between;
@@ -89,16 +81,17 @@ export const NewsStyle = styled.div`
     }
   }
   .news-title {
-    width: 35%;
+    width: 40%;
     h2 {
-      text-transform: none;
+      text-transform: uppercase;
       line-height: 100%;
       font-weight: 500;
+      font-family: var(--font-regular);
     }
   }
   .news-box {
+    padding-left: 2.2rem;
     flex: 1 1 65%;
-    background: magenta;
     display: flex;
     justify-content: space-between;
     align-items: space-between;
@@ -116,8 +109,7 @@ export const NewsStyle = styled.div`
     padding-right: 2rem;
   }
   .news-arrow {
-    flex: 1 1 5%;
-    background: #00ff6a;
+    flex: 1 1 10%;
     display: flex;
     justify-content: flex-end;
   }

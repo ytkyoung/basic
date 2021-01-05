@@ -14,8 +14,8 @@ const AboutBrand = () => {
 
 const AboutBrandLogo = styled.div`
   padding: 5rem 0rem;
-  border-top: 2px solid green;
-  border-bottom: 2px solid green;
+  border-top: 1px solid #252422;
+
   & img {
     width: 50%;
   }

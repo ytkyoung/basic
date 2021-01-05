@@ -1,8 +1,8 @@
 import ContactIntro from '../components/ContactIntro';
 import ContactOffices from '../components/ContactOffices';
 import ContactFollow from '../components/ContactFollow';
-import ContactSec from '../components/ContactSec';
-import ContactSec1 from '../components/ContactSec';
+
+import Sec1 from '../components/Sec1';
 import ScrollTop from '../components/ScrollTop';
 //Animations
 import { motion } from 'framer-motion';
@@ -17,9 +17,9 @@ const News = () => {
       animate="show"
     >
       <ContactIntro />
-      <ContactSec1 />
+      <Sec1 sektion={'A'} />
       <ContactOffices />
-      <ContactSec />
+      <Sec1 sektion={'B'} />
       <ContactFollow />
       <ScrollTop />
     </motion.div>

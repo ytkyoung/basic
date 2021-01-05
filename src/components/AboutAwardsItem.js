@@ -31,7 +31,6 @@ const ItemWrapper = styled.div`
       font-size: 2rem;
     }
     &:hover {
-      color: green;
       opacity: 1 !important;
     }
   }

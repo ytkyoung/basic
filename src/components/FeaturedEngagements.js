@@ -32,8 +32,7 @@ const FeaturedEngagements = () => {
 };
 
 const Featured = styled(FlexTest)`
-  height: 80vh;
-  background: lightgray;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -41,10 +40,9 @@ const Featured = styled(FlexTest)`
   h2 {
     font-size: 3rem;
     padding-bottom: 5rem;
-    color: red;
   }
   .description {
-    height: 50vh;
+    height: 40vh;
     width: 30%;
     display: flex;
     justify-content: center;
@@ -52,26 +50,21 @@ const Featured = styled(FlexTest)`
   }
   .brands-cards {
     width: 100%;
-    height: 800px;
     display: flex;
     justify-content: center;
-    background: red;
     margin: 2em auto;
     padding: 0 1em;
-    background: #04191b;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
   }
   .cards {
     display: flex;
     width: 100%;
-    background: #001e80;
   }
 
   .card {
     margin: 2rem 10rem 2rem 0rem;
     scroll-snap-align: center;
-    background-color: #00ff15;
   }
 `;
 

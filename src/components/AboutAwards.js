@@ -21,7 +21,7 @@ const useMousePosition = () => {
 const AboutAwards = () => {
   const [activeIndex, setActiveIndex] = React.useState(-1);
   const { x, y } = useMousePosition();
-  console.log(x, y);
+  // console.log(x, y);
   return (
     <AwardsWrapper>
       <div className="awards-title">
@@ -68,7 +68,9 @@ const AboutAwards = () => {
 
 const AwardsWrapper = styled.div`
   min-height: 100vh;
-
+  .awards-text {
+    margin-bottom: 20vh;
+  }
   .awards-list {
     position: relative;
     mix-blend-mode: difference;
@@ -95,8 +97,8 @@ const AwardsWrapper = styled.div`
       position: absolute;
       width: auto;
       height: auto;
-      max-height: 90%;
-      max-width: 80%;
+      max-height: 60%;
+      max-width: 50%;
       object-fit: contain;
       pointer-events: none;
       transition: all 0.5s ease-out;

@@ -35,22 +35,20 @@ const ServiceStyle = styled.div`
   .description {
     flex: 1 1 60%;
     align-self: flex-start;
-    background: red;
     h3 {
       font-size: 1.5rem;
       text-transform: uppercase;
-      padding-top: 2rem;
+      /* padding-top: 2rem; */
     }
     h2 {
       font-size: 3.5rem;
-      padding-top: 3rem;
+      padding-top: 5rem;
       padding-bottom: 4.3rem;
       line-height: 120%;
     }
   }
   .branding {
     flex: 1 1 40%;
-    background: green;
     display: flex;
     padding-top: 2rem;
     justify-content: flex-end;

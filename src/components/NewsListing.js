@@ -16,18 +16,9 @@ const NewsListing = () => {
 };
 
 const SnapStyle = styled.section`
-  background: yellow;
   .featured-news {
     h2 {
       text-transform: uppercase;
-    }
-  }
-
-  .news-title {
-    h2 {
-      color: #004d80;
-      font-family: var(--font-medium);
-      font-weight: medium;
     }
   }
 `;

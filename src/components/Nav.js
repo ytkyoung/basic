@@ -20,7 +20,7 @@ const Nav = () => {
         <li>
           <Link to="/work">Work</Link>
           <Line
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 }}
             initial={{ width: '0%' }}
             animate={{ width: pathname === '/work' ? '100%' : '0' }}
           />
@@ -67,7 +67,7 @@ const Nav = () => {
   );
 };
 
-const StyledNav = styled.nav`
+const StyledNav = styled(motion.nav)`
   min-height: 15vh;
   display: flex;
   margin: auto;
@@ -80,7 +80,7 @@ const StyledNav = styled.nav`
   z-index: 10; */
   a {
     font-size: 1.5rem;
-    color: #6d6d6d;
+    color: var(--color-font-black);
     text-transform: uppercase;
   }
   ul {
@@ -88,14 +88,13 @@ const StyledNav = styled.nav`
     justify-content: space-around;
     align-items: center;
     flex: 1 1 60%;
-    background-color: #dbdbdb;
   }
   li {
     padding-left: 0rem;
     position: relative;
   }
+
   .logo {
-    background-color: cyan;
     flex: 1 1 20%;
   }
   .logo img {
@@ -103,7 +102,6 @@ const StyledNav = styled.nav`
   }
   .three {
     flex: 1 1 20%;
-    background-color: red;
   }
 `;
 

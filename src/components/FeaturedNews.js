@@ -6,8 +6,11 @@ const FeaturedNews = () => {
   return (
     <NewsStyle>
       <div className="featured-news">
-        <div className="news-title">
-          <h2>Featured News</h2>
+        <div className="news-title-main">
+          <h2>
+            Featured <br />
+            News
+          </h2>
         </div>
         <div className="news-box">
           {data.map((news, index) => (
@@ -20,17 +23,13 @@ const FeaturedNews = () => {
 };
 
 const NewsStyle = styled.section`
-  background: yellow;
   .featured-news {
+  }
+  .news-title-main {
+    padding-bottom: 3rem;
     h2 {
       text-transform: uppercase;
-    }
-  }
-
-  .news-title {
-    h2 {
-      color: #004d80;
-      font-family: var(--font-regular);
+      font-family: var(--font-bold);
     }
   }
 `;

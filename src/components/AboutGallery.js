@@ -25,7 +25,6 @@ const AboutGallery = () => {
 
 const TestWrapper = styled.div`
   position: relative;
-  background: red;
   height: 200vh;
 `;
 
@@ -69,7 +68,7 @@ const Pos3 = styled.div`
 const Pos4 = styled.div`
   position: absolute;
   top: 40%;
-  left: 55%;
+  left: 45%;
   z-index: 1;
   filter: grayscale(50%);
   &:hover {

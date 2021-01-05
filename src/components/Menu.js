@@ -35,8 +35,6 @@ class Menu extends Component {
   }
 }
 const TestWrapper = styled.div`
-  background: magenta;
-
   .button-box {
     padding: 0 3rem;
     height: 7vh;

@@ -6,7 +6,7 @@ const AboutCapabities = () => {
   return (
     <SnapStyle>
       <div className="capa-title">
-        <h2>Agency Snapshot</h2>
+        <h2>CAPABILITIES</h2>
       </div>
       <div className="capa-lists">
         {data.map((capa, index) => (
@@ -21,17 +21,15 @@ const SnapStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 18vh;
   .capa-title {
-    margin-top: 15rem;
     flex: 1 1 30%;
-    background: red;
     h2 {
       width: 50%;
     }
   }
   .capa-lists {
     flex: 1 1 70%;
-    background: blue;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -39,8 +37,7 @@ const SnapStyle = styled.div`
   }
   .capa-card {
     flex: 1 1 50%;
-    background: #66ff00;
-    padding: 15rem 10rem 10rem 5rem;
+    padding: 0rem 10rem 10rem 0rem;
     p {
       width: 80%;
     }

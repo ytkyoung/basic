@@ -75,19 +75,17 @@ const TestStyle = styled.div`
   .roundButton {
     display: flex;
     justify-content: flex-end;
-    background-color: #b91111;
   }
   .kreise {
     width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #11b9b0;
   }
   .kreis {
     padding: 0.2rem;
     font-size: 0.8rem;
-    color: yellow;
+    color: var(--color-font-black);
     transition: all 0.8s cubic-bezier(0, 1.26, 0.8, 1.28);
   }
   .kreise {
@@ -95,11 +93,10 @@ const TestStyle = styled.div`
   }
 
   .kreise:hover {
-    background-color: #96d9ff;
     cursor: pointer;
   }
   .kreise:hover .kreis:nth-child(2) {
-    color: #1900ff;
+    color: #f9cdcd;
     padding: 0rem 0.4rem;
   }
 `;

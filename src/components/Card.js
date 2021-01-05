@@ -13,6 +13,7 @@ const Card = (props) => {
         <div className="card-title">
           <h3>{props.brand.title}</h3>
         </div>
+        <div className="card-line2"></div>
         <div className="card-text">
           <p>{props.brand.text}</p>
         </div>
@@ -29,15 +30,25 @@ const CardItem = styled.div`
   flex-direction: column;
 
   .card-line {
-    background-color: #00ff15;
-    height: 0.3rem;
-    width: 5%;
+    background-color: var(--color-font-black);
+    height: 0.1rem;
+    width: 10%;
+  }
+  .card-line2 {
+    background-color: var(--color-font-black);
+    height: 0.1rem;
+    width: 100%;
+  }
+  .card-title {
+    h3 {
+      padding: 10rem 0rem 1rem 0rem;
+    }
   }
 `;
 
 const BrandLogo = styled.div`
-  background-color: blue;
-  width: 20%;
+  width: 40%;
+  padding-bottom: 3rem;
   img {
     width: 100%;
   }

@@ -41,13 +41,10 @@ const HomeIntro = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
-  background-color: #f58585;
   .home-title1 {
     flex: 1 1 70%;
     padding-top: 3%;
     align-self: flex-start;
-    background: yellow;
     h1 {
       letter-spacing: -2px;
     }
@@ -55,7 +52,6 @@ const HomeIntro = styled.div`
   .home-title2 {
     flex: 1 1 30%;
     align-self: flex-end;
-    background: #00ffaa;
     h1 {
       letter-spacing: -2px;
     }
@@ -64,7 +60,7 @@ const HomeIntro = styled.div`
 
 const Here = styled.div`
   font-size: 8rem;
-  color: red;
+  color: var(--color-font-black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +68,6 @@ const Here = styled.div`
 
 const Point = styled.div`
   font-size: 9rem;
-  color: green;
   position: relative;
   right: 7%;
 `;

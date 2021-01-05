@@ -36,10 +36,9 @@ const ThinkStyle = styled.section`
   align-items: flex-start;
   height: 35vh;
   padding-top: 3rem;
-  padding-bottom: 10vh;
-  background: lime;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
+  padding-bottom: 3rem;
+  border-top: 1px solid #252422;
+
   .wrapper-think {
     display: flex;
     justify-content: flex-start;
@@ -47,15 +46,13 @@ const ThinkStyle = styled.section`
   }
   & div:nth-child(1) {
     flex: 1 1 30%;
-    background: red;
   }
   & div:nth-child(2) {
     flex: 1 1 30%;
-    background: green;
+    margin-left: 5rem;
   }
   & div:nth-child(3) {
     flex: 1 1 40%;
-    background: #c78306;
   }
 `;
 

@@ -6,7 +6,9 @@ const AboutSnapshot = () => {
   return (
     <SnapStyle>
       <div className="snap-title">
-        <h2>Agency Snapshot</h2>
+        <h2>
+          Agency <br /> Snapshot
+        </h2>
       </div>
       <div className="snap-stats">
         {data.map((shot, index) => (
@@ -21,17 +23,17 @@ const SnapStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 5rem;
   .snap-title {
-    margin-top: 15rem;
     flex: 1 1 30%;
-    background: red;
     h2 {
       width: 50%;
+      text-transform: uppercase;
+      font-size: 3.5rem;
     }
   }
   .snap-stats {
     flex: 1 1 70%;
-    background: blue;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -39,8 +41,9 @@ const SnapStyle = styled.div`
   }
   .snap-card {
     flex: 1 1 50%;
-    background: #66ff00;
-    padding: 15rem 10rem 15rem 5rem;
+    h2 {
+      padding-bottom: 2rem;
+    }
     p {
       width: 80%;
     }

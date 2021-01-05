@@ -36,24 +36,20 @@ const AboutIntro = () => {
 };
 
 const AboutIntroStyle = styled.section`
-  background: magenta;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #252422;
   .About-intro-title {
-    background: red;
     flex: 1 1 50%;
     padding-top: 3%;
     align-self: flex-start;
-    background: red;
   }
   .About-intro-title-part2 {
     flex: 1 1 50%;
     padding: 2rem;
     padding-top: 16%;
     align-self: flex-end;
-    background: green;
   }
 
   p {

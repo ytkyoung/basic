@@ -8,7 +8,7 @@ const TestBox2 = (props) => {
         <div className="hover-image">
           <img src={img} alt="" />
         </div>
-        <h3>(02)</h3>
+        <h4>(02)</h4>
       </Box>
     </>
   );

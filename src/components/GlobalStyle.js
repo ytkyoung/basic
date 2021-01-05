@@ -9,12 +9,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 :root {
-  --header1: calc(1.5rem + 1vw);
-  --header2: 1.7rem;
-  --header3: 1.6rem;
-  --header4: 1.45rem;
-  --big: 2.5rem;
-  --text: 1.4rem;
+  --color-font-black: #252422;
   --main-color: #252422;
   --secondary-color: #f9cdcd;
   --special-color: #f4f4f4;
@@ -66,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     margin: 0 auto;
     padding: 0 5%;
-    /* font-family: 'Inter', sans-serif; */
+    font-family: var(--font-regular);
     background: transparent;
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -96,6 +91,7 @@ const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
     font-size: 12rem;
     line-height: 90%;
+    color: var(--color-font-black);
     @media (max-width: 1700px) {
       font-size: 9rem;
     }
@@ -112,8 +108,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--font-regular);
   }
   h4 {
-    font-size: 1.6rem;
-    font-family: var(--font-medium);
+    font-size: 1.4rem;
+    font-family: var(--font-regular);
     text-transform: uppercase;
     font-weight: 300;
   }
@@ -135,13 +131,14 @@ const GlobalStyle = createGlobalStyle`
 
   span {
     font-weight: bold;
-    color: #23d997;
+    color: var(--color-font-black);
   }
 
   p {
     padding: 3rem 0rem;
     font-size: 1.8rem;
     line-height: 150%;
+    color: var(--color-font-black)
   }
   input[type=text] {
     width: 35vw;
@@ -161,7 +158,6 @@ const GlobalStyle = createGlobalStyle`
 #flyoutMenu {
   width: 100vw;
   height: 100vh;
-  background-color: #FFE600;
   position: fixed;
   top: 0;
   left: 0;

@@ -30,8 +30,7 @@ const FeaturedNewsItem = (props) => {
 };
 
 const FeaturedStyle = styled.div`
-  background: green;
-  border-top: 2px solid #00ff2a;
+  border-top: 2px solid #252422;
   padding: 2.2rem 0rem 6.7rem 0rem;
   .news {
     display: flex;
@@ -53,8 +52,8 @@ const FeaturedStyle = styled.div`
     }
   }
   .news-box {
+    padding-left: 2.2rem;
     flex: 1 1 65%;
-    background: magenta;
     display: flex;
     justify-content: space-between;
     align-items: space-between;
@@ -70,7 +69,6 @@ const FeaturedStyle = styled.div`
   }
   .news-arrow {
     flex: 1 1 10%;
-    background: #00ff6a;
     display: flex;
     justify-content: flex-end;
   }

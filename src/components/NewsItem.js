@@ -15,10 +15,10 @@ const NewsItem = (props) => {
           </div>
           <div className="news-info">
             <div className="news-category">
-              <h3>{props.news.category}</h3>
+              <h4>{props.news.category}</h4>
             </div>
             <div className="news-date">
-              <h3>{props.news.date}</h3>
+              <h4>{props.news.date}</h4>
             </div>
           </div>
         </div>

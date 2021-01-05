@@ -6,7 +6,7 @@ import AboutCapabities from '../components/AboutCapabities';
 import AboutAwards from '../components/AboutAwards';
 // import KriselMisel from '../components/KriselMisel';
 import ScrollTop from '../components/ScrollTop';
-
+import Sec1 from '../components/Sec1';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
@@ -23,8 +23,11 @@ const About = () => {
       <AboutIntro />
       <AboutGallery />
       <AboutBrand />
+      <Sec1 sektion={'A'} />
       <AboutSnapshot />
+      <Sec1 sektion={'B'} />
       <AboutCapabities />
+      <Sec1 sektion={'C'} />
       <AboutAwards />
       {/* <KriselMisel /> */}
       <ScrollTop />

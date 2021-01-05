@@ -1,21 +1,23 @@
 import styled from 'styled-components';
 
-const ContactSec1 = () => {
+const ContactSec1 = ({ sektion }) => {
   return (
     <SecStyle>
       <div className="sec1">
-        <h3>SEC.</h3>
+        <h4>SEC.</h4>
       </div>
       <div className="sec2">
-        <h3>/A</h3>
-        <h3>●</h3>
+        <h4>{sektion}</h4>
+        <h4>●</h4>
       </div>
     </SecStyle>
   );
 };
 
 const SecStyle = styled.section`
-  background: orange;
+  padding: 2rem 0rem;
+  margin-bottom: 5rem;
+  border-top: 1px solid #252422;
   height: 5vh;
   display: flex;
   justify-content: center;
