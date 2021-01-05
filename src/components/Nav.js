@@ -7,75 +7,79 @@ import Logo from '../components/Logo';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = (color) => {
   const { pathname } = useLocation();
   console.log(pathname);
+
   return (
     <StyledNav>
-      <div className="logo">
-        <Link to="/">
-          <Logo />
-        </Link>
-      </div>
-      <ul>
-        <li>
-          <Link to="/work">Work</Link>
-          <Line
-            transition={{ duration: 0.1 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work' ? '100%' : '0' }}
-          />
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-          <Line
-            transition={{ duration: 0.3 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/about' ? '100%' : '0' }}
-          />
-        </li>
-        <li>
-          <Link to="/news">News</Link>
-          <Line
-            transition={{ duration: 0.3 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/news' ? '100%' : '0' }}
-          />
-        </li>
-        <li>
-          <Link to="/thinking">Thinking</Link>
-          <Line
-            transition={{ duration: 0.3 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/thinking' ? '100%' : '0' }}
-          />
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-          <Line
-            transition={{ duration: 0.3 }}
-            initial={{ width: '0%' }}
-            animate={{ width: pathname === '/contact' ? '100%' : '0' }}
-          />
-        </li>
-      </ul>
+      <div className="test" style={{ background: color }}>
+        <div className="logo">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </div>
+        <ul>
+          <li>
+            <Link to="/work">Work</Link>
+            <Line
+              transition={{ duration: 0.1 }}
+              initial={{ width: '0%' }}
+              animate={{ width: pathname === '/work' ? '100%' : '0' }}
+            />
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+            <Line
+              transition={{ duration: 0.3 }}
+              initial={{ width: '0%' }}
+              animate={{ width: pathname === '/about' ? '100%' : '0' }}
+            />
+          </li>
+          <li>
+            <Link to="/news">News</Link>
+            <Line
+              transition={{ duration: 0.3 }}
+              initial={{ width: '0%' }}
+              animate={{ width: pathname === '/news' ? '100%' : '0' }}
+            />
+          </li>
+          <li>
+            <Link to="/thinking">Thinking</Link>
+            <Line
+              transition={{ duration: 0.3 }}
+              initial={{ width: '0%' }}
+              animate={{ width: pathname === '/thinking' ? '100%' : '0' }}
+            />
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+            <Line
+              transition={{ duration: 0.3 }}
+              initial={{ width: '0%' }}
+              animate={{ width: pathname === '/contact' ? '100%' : '0' }}
+            />
+          </li>
+        </ul>
 
-      <div className="three">
-        <MenuContainer />
+        <div className="three">
+          <MenuContainer />
+        </div>
+        {/* <Krisel /> */}
       </div>
-      {/* <Krisel /> */}
     </StyledNav>
   );
 };
 
 const StyledNav = styled(motion.nav)`
-  min-height: 15vh;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0rem;
-
+  .test {
+    min-height: 15vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
   /* position: sticky;
   top: 0;
   z-index: 10; */

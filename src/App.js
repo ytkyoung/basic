@@ -11,22 +11,23 @@ import Thinking from './pages/Thinking';
 import Contact from './pages/Contact';
 import ServicesDetail from './pages/ServicesDetail';
 import Footer from './components/Footer';
-// import Krisel from './components/Krisel';
+import Krisel from './components/Krisel';
 
 import { AnimatePresence } from 'framer-motion';
 
 // Router
 import { Switch, Route, useLocation } from 'react-router-dom';
-
+import React, { useState } from 'react';
 function App() {
   const location = useLocation();
   console.log(location.pathname);
-
+  const [color] = useState('#db3737');
   return (
     <div className="App">
       <>
         <GlobalStyle />
-        <Nav />
+
+        <Nav color={color} />
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
             <Route path="/" exact>
@@ -53,7 +54,8 @@ function App() {
           </Switch>
         </AnimatePresence>
         <Footer />
-        {/* <Krisel /> */}
+
+        <Krisel />
       </>
     </div>
   );

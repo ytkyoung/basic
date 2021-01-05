@@ -1,6 +1,6 @@
 import hero from '../img/Hero.mp4';
 import styled from 'styled-components';
-import { titleAnim, fade, titleDot } from '../animation';
+import { titleAnim, fade } from '../animation';
 import { motion } from 'framer-motion';
 
 const HomeSection = () => {

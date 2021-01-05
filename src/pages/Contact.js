@@ -1,7 +1,7 @@
 import ContactIntro from '../components/ContactIntro';
 import ContactOffices from '../components/ContactOffices';
 import ContactFollow from '../components/ContactFollow';
-import TestUse from '../components/TestUse';
+// import TestUse from '../components/TestUse';
 
 import Sec1 from '../components/Sec1';
 import ScrollTop from '../components/ScrollTop';
@@ -18,7 +18,7 @@ const News = () => {
       animate="show"
     >
       <ContactIntro />
-      <TestUse />
+      {/* <TestUse /> */}
       <Sec1 sektion={'A'} />
       <ContactOffices />
       <Sec1 sektion={'B'} />
