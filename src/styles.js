@@ -24,7 +24,7 @@ export const IntroPlane = styled.section`
     color: red;
     background: blue;
     font-size: 1.8rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-medium);
     font-weight: medium;
   }
 `;
@@ -45,7 +45,7 @@ export const Intro = styled.section`
     color: red;
     background: blue;
     font-size: 1.8rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-medium);
     font-weight: medium;
   }
   & div:nth-child(1) {

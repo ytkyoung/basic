@@ -84,7 +84,6 @@ const TopText = styled.div`
   h1 {
     font-size: 9vw;
     opacity: 0.3;
-    font-family: 'Inter', sans-serif;
     span {
       color: #ffffff;
     }

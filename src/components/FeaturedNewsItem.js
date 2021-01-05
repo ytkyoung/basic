@@ -48,7 +48,7 @@ const FeaturedStyle = styled.div`
     h2 {
       text-transform: uppercase;
       line-height: 110%;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-regular);
       font-weight: regular;
     }
   }

@@ -109,16 +109,17 @@ const GlobalStyle = createGlobalStyle`
   }
   h3 {
     font-size: 2rem;
+    font-family: var(--font-regular);
   }
   h4 {
     font-size: 1.6rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-medium);
     text-transform: uppercase;
     font-weight: 300;
   }
   h5 {
     font-size: 1.2rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-regular);
     text-transform: uppercase;
     font-weight: 300;
   }
@@ -126,6 +127,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     font-size: 1.1rem;
     text-decoration: none;
+    font-family: var(--font-regular);
   }
   ul {
     list-style: none;

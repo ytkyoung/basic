@@ -30,8 +30,7 @@ const NewsStyle = styled.section`
   .news-title {
     h2 {
       color: #004d80;
-      font-family: 'Inter', sans-serif;
-      font-weight: regular;
+      font-family: var(--font-regular);
     }
   }
 `;

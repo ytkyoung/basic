@@ -26,7 +26,7 @@ const SnapStyle = styled.section`
   .news-title {
     h2 {
       color: #004d80;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-medium);
       font-weight: medium;
     }
   }

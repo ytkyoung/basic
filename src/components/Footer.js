@@ -80,7 +80,7 @@ const FooterStyle = styled.section`
     align-items: center;
     h2 {
       width: 80%;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-regular);
       font-weight: regular;
     }
   }
@@ -141,8 +141,7 @@ const FooterStyle = styled.section`
     }
     ul li {
       font-size: 1.6rem;
-      font-family: 'Inter', sans-serif;
-      font-weight: regular;
+      font-family: var(--font-regular);
     }
     .offices {
       padding-right: 20%;

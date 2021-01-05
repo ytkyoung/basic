@@ -58,7 +58,7 @@ const AboutIntroStyle = styled.section`
 
   p {
     font-size: 3rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-medium);
     font-weight: medium;
     line-height: 110%;
   }
