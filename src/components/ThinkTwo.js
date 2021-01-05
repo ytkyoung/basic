@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { fade } from '../animation';
 
 const ThinkTwo = () => {
   return (
     <ThinkStyle>
       <div className="wrapper-think">
-        <div className="think-one">
+        <motion.div className="think-one" variants={fade}>
           <h2>BRANDBEATS®</h2>
           <p>
             Brandbeats® is our agency podcast garnering over 45,000+ listens per
@@ -13,8 +15,8 @@ const ThinkTwo = () => {
             candid exploration of design topics, branding trends, and
             experiences we’re noticing in culture.
           </p>
-        </div>
-        <div className="think-two">
+        </motion.div>
+        <motion.div className="think-two" variants={fade}>
           <h2>APPLIED®</h2>
           <p>
             Applied® is our panel series and thought-leadership platform where
@@ -23,7 +25,7 @@ const ThinkTwo = () => {
             guided questions that use culture to explain why trends exist and
             how they impact business and tech.
           </p>
-        </div>
+        </motion.div>
         <div className="think-three"></div>
       </div>
     </ThinkStyle>
@@ -34,9 +36,8 @@ const ThinkStyle = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 35vh;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   border-top: 1px solid #252422;
 
   .wrapper-think {

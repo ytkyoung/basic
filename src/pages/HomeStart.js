@@ -11,7 +11,8 @@ import ScrollTop from '../components/ScrollTop';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const HomeStart = () => {
+const HomeStart = (props) => {
+  console.log(props);
   return (
     <motion.div
       exit="exit"

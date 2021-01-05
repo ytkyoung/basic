@@ -9,6 +9,7 @@ import { useLocation } from 'react-router-dom';
 
 const Nav = () => {
   const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <StyledNav>
       <div className="logo">
@@ -75,9 +76,9 @@ const StyledNav = styled(motion.nav)`
   align-items: center;
   padding: 1rem 0rem;
 
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10; */
   a {
     font-size: 1.5rem;
     color: var(--color-font-black);

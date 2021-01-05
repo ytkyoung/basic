@@ -11,7 +11,7 @@ import Thinking from './pages/Thinking';
 import Contact from './pages/Contact';
 import ServicesDetail from './pages/ServicesDetail';
 import Footer from './components/Footer';
-import Krisel from './components/Krisel';
+// import Krisel from './components/Krisel';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -20,6 +20,8 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 
 function App() {
   const location = useLocation();
+  console.log(location.pathname);
+
   return (
     <div className="App">
       <>
@@ -51,7 +53,7 @@ function App() {
           </Switch>
         </AnimatePresence>
         <Footer />
-        <Krisel />
+        {/* <Krisel /> */}
       </>
     </div>
   );

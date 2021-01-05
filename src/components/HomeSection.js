@@ -17,10 +17,10 @@ const HomeSection = () => {
             <motion.h1 variants={titleAnim}> starts</motion.h1>
           </div>
         </motion.div>
-        <motion.div className="home-title2" variants={titleDot}>
+        <motion.div className="home-title2" variants={titleAnim}>
           <div className="hide">
             <Here>
-              <Point>●</Point> <h1>here</h1>
+              <Point variants={titleAnim}>●</Point> <h1>here</h1>
             </Here>
           </div>
         </motion.div>
@@ -66,7 +66,7 @@ const Here = styled.div`
   align-items: center;
 `;
 
-const Point = styled.div`
+const Point = styled(motion.div)`
   font-size: 9rem;
   position: relative;
   right: 7%;

@@ -4,7 +4,7 @@ const Krisel = () => {
   return <SpotTest></SpotTest>;
 };
 
-const SpotTest = styled.section`
+const SpotTest = styled.div`
   background-color: rgb(0, 0, 0);
   h1 {
     font-size: 4rem;
