@@ -70,6 +70,9 @@ const Footer = () => {
 };
 
 const FooterStyle = styled.section`
+  background: ${({ theme }) => theme.footerBG};
+  margin: 0 auto;
+  padding: 0 5%;
   .footer-intro {
     height: 30vh;
     display: flex;

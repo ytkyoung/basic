@@ -59,12 +59,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     /* width: 90%; */
-    margin: 0 auto;
-    padding: 0 5%;
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+
     font-family: var(--font-regular);
-    background: transparent;
+    /* background: transparent; */
     overscroll-behavior: none;
     overflow-x: hidden;
+    transition: all 0.25s linear;
   }
   button {
     background-color: transparent;
@@ -114,7 +116,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: var(--font-regular);
     text-transform: uppercase;
     font-weight: 300;
@@ -152,7 +154,6 @@ const GlobalStyle = createGlobalStyle`
   textarea:focus, input:focus{
     outline: none;
   }
-
 
 
 #flyoutMenu {
@@ -198,6 +199,9 @@ const GlobalStyle = createGlobalStyle`
   background: var(--special2-color);
   text-shadow: none;
 }
+
+
+
 `;
 
 export default GlobalStyle;

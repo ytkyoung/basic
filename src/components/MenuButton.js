@@ -85,7 +85,7 @@ const TestStyle = styled.div`
   .kreis {
     padding: 0.2rem;
     font-size: 0.8rem;
-    color: var(--color-font-black);
+    color: ${({ theme }) => theme.text};
     transition: all 0.8s cubic-bezier(0, 1.26, 0.8, 1.28);
   }
   .kreise {
@@ -96,7 +96,7 @@ const TestStyle = styled.div`
     cursor: pointer;
   }
   .kreise:hover .kreis:nth-child(2) {
-    color: #f9cdcd;
+    color: ${({ theme }) => theme.dotcenter};
     padding: 0rem 0.4rem;
   }
 `;

@@ -3,25 +3,27 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import MenuContainer from '../components/MenuContainer';
 import Logo from '../components/Logo';
-// import Krisel from '../components/Krisel';
+import LogoPink from '../components/LogoPink';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
-const Nav = (color) => {
+const Nav = ({ theme, toggletheme }) => {
   const { pathname } = useLocation();
   console.log(pathname);
-
+  console.log(theme);
+  const isLight = theme === 'light';
   return (
     <StyledNav>
-      <div className="test" style={{ background: color }}>
+      <div className="Bground">
         <div className="logo">
-          <Link to="/">
-            <Logo />
-          </Link>
+          <Link to="/">{isLight ? <Logo /> : <LogoPink />}</Link>
         </div>
+
         <ul>
           <li>
-            <Link to="/work">Work</Link>
+            <Link to="/work" onClick={toggletheme}>
+              <h5>Work</h5>
+            </Link>
             <Line
               transition={{ duration: 0.1 }}
               initial={{ width: '0%' }}
@@ -29,7 +31,9 @@ const Nav = (color) => {
             />
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" theme={'test'}>
+              <h5>About</h5>
+            </Link>
             <Line
               transition={{ duration: 0.3 }}
               initial={{ width: '0%' }}
@@ -37,7 +41,9 @@ const Nav = (color) => {
             />
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <Link to="/news" onClick={toggletheme}>
+              <h5>News</h5>
+            </Link>
             <Line
               transition={{ duration: 0.3 }}
               initial={{ width: '0%' }}
@@ -45,7 +51,9 @@ const Nav = (color) => {
             />
           </li>
           <li>
-            <Link to="/thinking">Thinking</Link>
+            <Link to="/thinking" onClick={toggletheme}>
+              <h5>Thinking</h5>
+            </Link>
             <Line
               transition={{ duration: 0.3 }}
               initial={{ width: '0%' }}
@@ -53,7 +61,9 @@ const Nav = (color) => {
             />
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={toggletheme}>
+              <h5>Contact</h5>
+            </Link>
             <Line
               transition={{ duration: 0.3 }}
               initial={{ width: '0%' }}
@@ -65,14 +75,15 @@ const Nav = (color) => {
         <div className="three">
           <MenuContainer />
         </div>
-        {/* <Krisel /> */}
       </div>
     </StyledNav>
   );
 };
 
 const StyledNav = styled(motion.nav)`
-  .test {
+  margin: 0 auto;
+  padding: 0 5%;
+  .Bground {
     min-height: 15vh;
     display: flex;
     margin: auto;

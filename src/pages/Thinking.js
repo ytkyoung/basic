@@ -5,21 +5,29 @@ import ScrollTop from '../components/ScrollTop';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import styled from 'styled-components';
 
 const News = () => {
   return (
-    <motion.div
-      exit="exit"
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-    >
-      <ThinkIntro />
-      <ThinkTwo />
-      <ThinkListing />
-      <ScrollTop />
-    </motion.div>
+    <NewsSection>
+      <motion.div
+        exit="exit"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+      >
+        <ThinkIntro />
+        <ThinkTwo />
+        <ThinkListing />
+        <ScrollTop />
+      </motion.div>
+    </NewsSection>
   );
 };
+
+const NewsSection = styled.section`
+  margin: 0 auto;
+  padding: 0 5%;
+`;
 
 export default News;
