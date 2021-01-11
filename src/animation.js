@@ -1,7 +1,7 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 500,
+    y: 300,
   },
   show: {
     opacity: 1,
@@ -21,15 +21,15 @@ export const pageAnimation = {
 };
 
 export const titleAnim = {
-  hidden: { y: 500 },
+  hidden: { y: 200 },
   show: {
     y: 0,
-    transition: { duration: 0.3, staggerChildren: 0.15, ease: 'easeOut' },
+    transition: { duration: 0.75, staggerChildren: 0.15, ease: 'easeOut' },
   },
 };
 
 export const titleDot = {
-  hidden: { y: 500, scale: 4, opacity: 0 },
+  hidden: { y: 200, scale: 4, opacity: 0 },
   show: {
     y: 0,
     scale: 1,

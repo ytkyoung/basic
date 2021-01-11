@@ -77,6 +77,14 @@ const Huhu = styled.div`
     border-bottom: 0.1rem solid #252422;
     margin-bottom: 6rem;
   }
+  @media (max-width: 890px) {
+    height: 100%;
+    background: magenta;
+    flex-direction: column;
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
 `;
 
 const SlotNo1 = styled.div`
@@ -87,6 +95,11 @@ const SlotNo1 = styled.div`
   flex-direction: column;
   .learn {
     margin-bottom: 50%;
+  }
+  @media (max-width: 890px) {
+    .learn {
+      margin-bottom: 10%;
+    }
   }
 `;
 

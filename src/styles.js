@@ -25,6 +25,12 @@ export const IntroPlane = styled.section`
     font-family: var(--font-medium);
     font-weight: medium;
   }
+  @media (max-width: 890px) {
+    h2 {
+      font-size: 7rem;
+      line-height: 90%;
+    }
+  }
 `;
 
 export const Intro = styled.section`
@@ -52,6 +58,15 @@ export const Intro = styled.section`
     flex: 1 1 50%;
     padding: 2rem;
     align-self: flex-end;
+  }
+  @media (max-width: 890px) {
+    height: 100%;
+    background: magenta;
+    flex-direction: column;
+    h1 {
+      font-size: 7rem;
+      line-height: 90%;
+    }
   }
 `;
 

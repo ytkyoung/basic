@@ -41,6 +41,10 @@ const SpotLight = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 890px) {
+    background: magenta;
+    flex-direction: column;
+  }
 `;
 
 const Description = styled.div`
@@ -50,6 +54,11 @@ const Description = styled.div`
   }
   button {
     margin-top: 3rem;
+  }
+  @media (max-width: 890px) {
+    h2 {
+      font-size: 7rem;
+    }
   }
 `;
 
@@ -63,6 +72,9 @@ const CultureVideo = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+  }
+  @media (max-width: 890px) {
+    margin-top: 3rem;
   }
 `;
 

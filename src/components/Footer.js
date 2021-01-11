@@ -147,6 +147,28 @@ const FooterStyle = styled.section`
     justify-content: space-between;
     align-items: center;
   }
+  @media (max-width: 890px) {
+    display: flex;
+    flex-direction: column;
+    background: magenta;
+    .footer-intro {
+      padding-top: 3rem;
+      flex-direction: column;
+      position: relative;
+    }
+    .brand-logo-icon {
+      padding: 0;
+      position: absolute;
+      top: 45%;
+      left: 0;
+      img {
+        width: 100%;
+      }
+    }
+    .footer-bottom {
+      flex-direction: column;
+    }
+  }
 `;
 
 export default Footer;

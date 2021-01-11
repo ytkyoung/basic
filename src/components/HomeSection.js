@@ -56,6 +56,13 @@ const HomeIntro = styled.div`
       letter-spacing: -2px;
     }
   }
+  @media (max-width: 1300px) {
+    background: green;
+  }
+  @media (max-width: 890px) {
+    background: magenta;
+    flex-direction: column;
+  }
 `;
 
 const Here = styled.div`
