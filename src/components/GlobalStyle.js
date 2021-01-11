@@ -71,18 +71,18 @@ const GlobalStyle = createGlobalStyle`
   button {
     background-color: transparent;
     border: none;
-    color: black;
+    color: ${({ theme }) => theme.text};
     padding: 10px 20px;
     text-align: center;
     display: inline-block;
     /* margin: 4px 2px; */
     cursor: pointer;
-    border: 1px solid #252422;
+    border: 1px solid ${({ theme }) => theme.text};
     border-radius: 16px;
     transition: all 0.5s ease;
     outline:none;
     &:hover {
-      background-color: #252422;
+      background-color: ${({ theme }) => theme.text};
       color: white;
     }
   }
@@ -93,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
     font-size: 12rem;
     line-height: 90%;
-    color: var(--color-font-black);
+    color: ${({ theme }) => theme.text};
     @media (max-width: 1700px) {
       font-size: 9rem;
     }
@@ -104,6 +104,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: regular;
     font-family: var(--font-bold);
     line-height: 90%;
+    color: ${({ theme }) => theme.text};
   }
   h3 {
     font-size: 2rem;
@@ -126,6 +127,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1rem;
     text-decoration: none;
     font-family: var(--font-regular);
+    ${({ theme }) => theme.text}
   }
   ul {
     list-style: none;
@@ -140,7 +142,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 3rem 0rem;
     font-size: 1.8rem;
     line-height: 150%;
-    color: var(--color-font-black)
+    color: ${({ theme }) => theme.text};
   }
   input[type=text] {
     width: 35vw;

@@ -35,7 +35,7 @@ const OfficeStyle = styled.div`
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid #252422;
+  border-bottom: 1px solid ${({ theme }) => theme.text};
   /* border-top: 1px solid #252422; */
 `;
 
@@ -50,7 +50,7 @@ const SlotNo2 = styled.div`
   align-items: flex-start;
   flex: 1 1 70%;
 
-  border-left: 1px solid #252422;
+  border-left: 1px solid ${({ theme }) => theme.text};
   padding-bottom: 3rem;
 
   .wrapper {

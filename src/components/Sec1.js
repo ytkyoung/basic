@@ -17,7 +17,7 @@ const ContactSec1 = ({ sektion }) => {
 const SecStyle = styled.section`
   padding: 2rem 0rem;
   margin-bottom: 5rem;
-  border-top: 1px solid #252422;
+  border-top: 1px solid ${({ theme }) => theme.text};
   height: 5vh;
   display: flex;
   justify-content: center;

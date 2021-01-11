@@ -21,7 +21,7 @@ export const pageAnimation = {
 };
 
 export const titleAnim = {
-  hidden: { y: 200 },
+  hidden: { y: 300 },
   show: {
     y: 0,
     transition: { duration: 0.75, staggerChildren: 0.15, ease: 'easeOut' },
@@ -29,7 +29,7 @@ export const titleAnim = {
 };
 
 export const titleDot = {
-  hidden: { y: 200, scale: 4, opacity: 0 },
+  hidden: { y: 300, scale: 4, opacity: 0 },
   show: {
     y: 0,
     scale: 1,

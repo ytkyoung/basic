@@ -123,7 +123,11 @@ const ContactStyle = styled.div`
     }
     a {
       font-size: 1.8rem;
-      color: var(--color-font-black);
+      text-decoration: none;
+      color: ${({ theme }) => theme.text};
+    }
+
+    a:hover {
       text-decoration: underline;
     }
   }

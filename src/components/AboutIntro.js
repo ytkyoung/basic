@@ -58,6 +58,10 @@ const AboutIntroStyle = styled.section`
     font-weight: medium;
     line-height: 110%;
   }
+  @media (max-width: 890px) {
+    background: magenta;
+    flex-direction: column;
+  }
 `;
 
 export default AboutIntro;

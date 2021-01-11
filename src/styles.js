@@ -16,10 +16,11 @@ export const IntroPlane = styled.section`
   h2 {
     font-size: 12rem;
     line-height: 85%;
+    color: ${({ theme }) => theme.text};
   }
 
   p {
-    color: red;
+    color: ${({ theme }) => theme.text};
     background: blue;
     font-size: 1.8rem;
     font-family: var(--font-medium);
@@ -83,7 +84,7 @@ export const Intro = styled.section`
 // `;
 
 export const NewsStyle = styled.div`
-  border-top: 1px solid #252422;
+  border-top: 1px solid ${({ theme }) => theme.text};
   padding: 2.2rem 0rem 6.7rem 0rem;
   .news {
     display: flex;

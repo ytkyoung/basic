@@ -38,7 +38,7 @@ const ThinkStyle = styled.section`
   align-items: flex-start;
   padding-top: 3rem;
   padding-bottom: 5rem;
-  border-top: 1px solid #252422;
+  border-top: 1px solid ${({ theme }) => theme.text};
 
   .wrapper-think {
     display: flex;

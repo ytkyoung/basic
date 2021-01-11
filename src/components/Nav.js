@@ -12,6 +12,7 @@ const Nav = ({ theme, toggletheme }) => {
   console.log(pathname);
   console.log(theme);
   const isLight = theme === 'light';
+
   return (
     <StyledNav>
       <div className="Bground">
@@ -21,7 +22,7 @@ const Nav = ({ theme, toggletheme }) => {
 
         <ul>
           <li>
-            <Link to="/work" onClick={toggletheme}>
+            <Link to="/work">
               <h5>Work</h5>
             </Link>
             <Line
@@ -31,7 +32,7 @@ const Nav = ({ theme, toggletheme }) => {
             />
           </li>
           <li>
-            <Link to="/about" theme={'test'}>
+            <Link to="/about" onClick={toggletheme}>
               <h5>About</h5>
             </Link>
             <Line
@@ -96,7 +97,7 @@ const StyledNav = styled(motion.nav)`
   z-index: 10; */
   a {
     font-size: 1.5rem;
-    color: var(--color-font-black);
+    color: ${({ theme }) => theme.text};
     text-transform: uppercase;
   }
   ul {
@@ -123,11 +124,11 @@ const StyledNav = styled(motion.nav)`
 
 const Line = styled(motion.div)`
   height: 0.1rem;
-  background: black;
   width: 50%;
   position: absolute;
   bottom: -30%;
   left: 0%;
+  background: ${({ theme }) => theme.text};
 `;
 
 export default Nav;

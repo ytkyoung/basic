@@ -67,7 +67,7 @@ const HomeIntro = styled.div`
 
 const Here = styled.div`
   font-size: 8rem;
-  color: var(--color-font-black);
+  color: ${({ theme }) => theme.text};
   display: flex;
   justify-content: center;
   align-items: center;
