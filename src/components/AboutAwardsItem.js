@@ -18,6 +18,7 @@ const AboutAwardsItem = ({ title, number, setActiveIndex, index }) => {
 };
 
 const ItemWrapper = styled.div`
+  margin-bottom: 3vh;
   .award-item {
   }
   .award-title {

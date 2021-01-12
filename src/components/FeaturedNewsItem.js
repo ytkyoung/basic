@@ -30,7 +30,7 @@ const FeaturedNewsItem = (props) => {
 };
 
 const FeaturedStyle = styled.div`
-  border-top: 2px solid #252422;
+  border-top: 2px solid ${({ theme }) => theme.text};
   padding: 2.2rem 0rem 6.7rem 0rem;
   .news {
     display: flex;

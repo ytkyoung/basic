@@ -4,8 +4,8 @@ export const lighttheme = {
   text: '#252422',
   title: '#252422',
   dotcenter: '#252422',
-  footerBG: 'green',
-  toggleBorder: '#FFF',
+  footerBG: '#252422',
+  footerColor: '#f4f4f4',
   gradient: 'linear-gradient(#39598A, #79D7ED)',
 };
 
@@ -16,6 +16,8 @@ export const darktheme = {
   dotcenter: '#f9cdcd',
   toggleBorder: '#6B8096',
   gradient: 'linear-gradient(#091236, #1E215D)',
+  footerBG: '#f4f4f4',
+  footerColor: '#252422',
 };
 
 export const testtheme = {

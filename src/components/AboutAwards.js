@@ -68,6 +68,7 @@ const AboutAwards = () => {
 
 const AwardsWrapper = styled.div`
   min-height: 100vh;
+  margin-bottom: 30vh;
   .awards-text {
     margin-bottom: 20vh;
   }
@@ -75,6 +76,7 @@ const AwardsWrapper = styled.div`
     position: relative;
     mix-blend-mode: difference;
     z-index: 4;
+
     &:hover {
       .award-title {
         opacity: 0.1;

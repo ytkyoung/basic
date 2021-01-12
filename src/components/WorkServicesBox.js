@@ -72,9 +72,9 @@ class WorkServiceBox extends React.Component {
 const Huhu = styled.div`
   display: flex;
   padding: 3rem 0rem;
-  border-top: 0.1rem solid #252422;
+  border-top: 0.1rem solid ${({ theme }) => theme.text};
   &:last-child {
-    border-bottom: 0.1rem solid #252422;
+    border-bottom: 0.1rem solid ${({ theme }) => theme.text};
     margin-bottom: 6rem;
   }
   @media (max-width: 890px) {
@@ -143,7 +143,7 @@ const SlotNo2 = styled.div`
       filter: grayscale(0);
       transform: scale(1);
     }
-    border-left: 1px solid #252422;
+    border-left: 1px solid ${({ theme }) => theme.text};
   }
   .box-box2 {
     padding-left: 3rem;

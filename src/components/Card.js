@@ -32,12 +32,12 @@ const CardItem = styled.div`
     }
   }
   .card-line {
-    background-color: var(--color-font-black);
+    background-color: ${({ theme }) => theme.text};
     height: 0.1rem;
     width: 10%;
   }
   .card-line2 {
-    background-color: var(--color-font-black);
+    background-color: ${({ theme }) => theme.text};
     height: 0.1rem;
     width: 100%;
   }

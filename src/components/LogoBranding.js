@@ -1,11 +1,14 @@
-import logo from '../img/branding-img.svg';
+import logo from '../img/footer-logo-bg-white1.svg';
 import styled from 'styled-components';
 
-const LogoBranding = () => {
+import Logo from '../components/Logo';
+
+const LogoBranding = ({ theme }) => {
+  const isLight = theme === 'light';
   return (
     <TestStyle>
       <div className="logo-box">
-        <img src={logo} alt="logo basic" />
+        {isLight ? <img src={logo} alt="logo basic" /> : <Logo />}
       </div>
     </TestStyle>
   );

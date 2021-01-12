@@ -64,7 +64,7 @@ function App() {
             </Route>
           </Switch>
         </AnimatePresence>
-        <Footer />
+        <Footer theme={theme} toggletheme={toggletheme} />
 
         <Krisel />
       </ThemeProvider>

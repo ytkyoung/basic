@@ -37,6 +37,9 @@ const OfficeStyle = styled.div`
   margin-bottom: 0.5rem;
   border-bottom: 1px solid ${({ theme }) => theme.text};
   /* border-top: 1px solid #252422; */
+  &:last-child {
+    border-bottom: none;
+  }
 `;
 
 const SlotNo1 = styled.div`

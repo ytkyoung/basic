@@ -2,12 +2,12 @@ import LogoBranding from '../components/LogoBranding';
 import styled from 'styled-components';
 import IconArrow from '../components/IconArrow';
 
-const Footer = () => {
+const Footer = ({ theme }) => {
   return (
     <FooterStyle>
       <div className="footer-intro">
         <div className="brand-logo-icon">
-          <LogoBranding />
+          <LogoBranding theme={theme} />
         </div>
         <div className="footer-title">
           <h2>
@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-email">
           <div className="box1">
-            <h2>●STAY IN THE KNOW</h2>
+            <h2>● STAY IN THE KNOW</h2>
           </div>
           <div className="box2">
             <form action="/">
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="footer-overview">
           <div className="social">
-            <h2>●SOCIAL</h2>
+            <h2>● SOCIAL</h2>
             <ul>
               <li>Instagram</li>
               <li>Twitter</li>
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="initiatives">
-            <h2>●INITIATIVES</h2>
+            <h2>● INITIATIVES</h2>
             <ul>
               <li>Crafted</li>
               <li>Culture Manual</li>
@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="offices">
-            <h2>●OFFICES</h2>
+            <h2>● OFFICES</h2>
             <ul>
               <li>San Diego – CA</li>
               <li>Bay Area – CA</li>
@@ -69,19 +69,27 @@ const Footer = () => {
   );
 };
 
-const FooterStyle = styled.section`
-  background: ${({ theme }) => theme.footerBG};
+const FooterStyle = styled.footer`
+  background-color: ${({ theme }) => theme.footerBG};
   margin: 0 auto;
-  padding: 0 5%;
+
+  h2,
+  h5 {
+    color: ${({ theme }) => theme.footerColor};
+  }
+  li {
+    color: ${({ theme }) => theme.footerColor};
+  }
+
   .footer-intro {
-    height: 30vh;
+    padding: 0 5%;
+    height: 40vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     h2 {
-      width: 80%;
       font-family: var(--font-regular);
-      font-weight: regular;
+      font-size: 3rem;
     }
   }
   .brand-logo-icon {
@@ -91,7 +99,8 @@ const FooterStyle = styled.section`
     }
   }
   .footer-bottom {
-    height: 30vh;
+    padding: 0 5%;
+    height: 40vh;
     display: flex;
   }
   .footer-title {
@@ -99,12 +108,13 @@ const FooterStyle = styled.section`
   }
   .footer-email {
     flex: 1 2 50%;
+    h2 {
+      font-size: 2rem;
+      font-family: var(--font-regular);
+    }
   }
   .box1 {
     justify-content: space-between;
-    h2 {
-      font-size: 2rem;
-    }
   }
   .box2 {
     display: flex;
@@ -120,14 +130,15 @@ const FooterStyle = styled.section`
   .line {
     height: 0.1rem;
     width: 81%;
-    background: var(--color-font-black);
+    background: ${({ theme }) => theme.footerColor};
   }
   .footer-overview {
     flex: 1 4 50%;
     display: flex;
     justify-content: space-between;
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
+      font-family: var(--font-regular);
     }
     ul {
       padding-top: 2rem;
@@ -146,6 +157,8 @@ const FooterStyle = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(0, 0, 0, 0.055);
+    padding: 0 5%;
   }
   @media (max-width: 890px) {
     display: flex;

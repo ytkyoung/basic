@@ -1,7 +1,7 @@
 import SctoGroteskABold from '../fonts/SctoGroteskA-Bold.woff2';
 import SctoGroteskAMedium from '../fonts/SctoGroteskA-Medium.woff2';
 import SctoGroteskARegular from '../fonts/SctoGroteskA-Regular.woff2';
-
+import noise from '../img/noise.png';
 import { createGlobalStyle } from 'styled-components';
 
 // #f4f4f4 / #252422 / #f9cdcd
@@ -61,7 +61,6 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-
     font-family: var(--font-regular);
     /* background: transparent; */
     overscroll-behavior: none;
@@ -156,6 +155,7 @@ const GlobalStyle = createGlobalStyle`
   textarea:focus, input:focus{
     outline: none;
   }
+
 
 
 #flyoutMenu {

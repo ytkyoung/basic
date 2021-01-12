@@ -47,6 +47,8 @@ const Follow = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
   .follow {
     flex: 1 1 30%;
   }
