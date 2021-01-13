@@ -173,7 +173,7 @@ const FooterStyle = styled.footer`
       padding: 0;
       position: absolute;
       top: 45%;
-      left: 0;
+      left: 5%;
       img {
         width: 100%;
       }
