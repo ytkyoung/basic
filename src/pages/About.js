@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const About = () => {
+const About = ({ theme }) => {
   return (
     <AboutSection>
       <motion.div
@@ -24,7 +24,7 @@ const About = () => {
       >
         <AboutIntro />
         <AboutGallery />
-        <AboutBrand />
+        <AboutBrand theme={theme} />
         <Sec1 sektion={'A'} />
         <AboutSnapshot />
         <Sec1 sektion={'B'} />

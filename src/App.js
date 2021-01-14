@@ -51,7 +51,7 @@ function App() {
               <ServicesDetail />
             </Route>
             <Route path="/about">
-              <About />
+              <About theme={theme} />
             </Route>
             <Route path="/News">
               <News theme={theme} />

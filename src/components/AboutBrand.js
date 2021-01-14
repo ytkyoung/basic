@@ -2,11 +2,11 @@
 import styled from 'styled-components';
 import LogoAni from '../components/LogoAni2';
 
-const AboutBrand = () => {
+const AboutBrand = ({ theme }) => {
   return (
     <>
       <AboutBrandLogo>
-        <LogoAni />
+        <LogoAni theme={theme} />
       </AboutBrandLogo>
     </>
   );
@@ -14,7 +14,7 @@ const AboutBrand = () => {
 
 const AboutBrandLogo = styled.div`
   padding: 5rem 0rem;
-  border-top: 1px solid #252422;
+  border-top: 1px solid ${({ theme }) => theme.text};
 
   & img {
     width: 50%;
