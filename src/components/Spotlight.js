@@ -1,5 +1,6 @@
 import Culture from '../img/Culture.mp4';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Spotlight = () => {
   return (
@@ -14,7 +15,9 @@ const Spotlight = () => {
             </h2>
           </Hide>
           <p>ADWEEK (AGENCY SPOTLIGHT)</p>
-          <button>About us</button>
+          <button>
+            <Link to="/about">About us</Link>
+          </button>
         </div>
       </Description>
       <CultureVideo>

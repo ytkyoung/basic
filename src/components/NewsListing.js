@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import NewsItem from '../components/NewsItem';
 import data from '../data/news.json';
 
-const NewsListing = () => {
+const NewsListing = ({ theme }) => {
   return (
     <SnapStyle>
       <div className="news-lists">
         {data.map((news, index) => (
-          <NewsItem key={index} news={news} />
+          <NewsItem key={index} news={news} theme={theme} />
         ))}
       </div>
     </SnapStyle>

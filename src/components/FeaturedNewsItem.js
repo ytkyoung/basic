@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-import IconArrow from '../components/IconArrow';
+import iconBlack from '../img/arrow-black.svg';
+import iconPink from '../img/arrow.svg';
 
 const FeaturedNewsItem = (props) => {
+  const isLight = props.theme === 'light';
   return (
     <FeaturedStyle>
       <div className="news">
@@ -22,7 +24,11 @@ const FeaturedNewsItem = (props) => {
           </div>
         </div>
         <div className="news-arrow">
-          <IconArrow />
+          {isLight ? (
+            <img src={iconBlack} alt="arrow" />
+          ) : (
+            <img src={iconPink} alt="arrow" />
+          )}
         </div>
       </div>
     </FeaturedStyle>
@@ -71,6 +77,10 @@ const FeaturedStyle = styled.div`
     flex: 1 1 10%;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+    img {
+      width: 20%;
+    }
   }
 `;
 

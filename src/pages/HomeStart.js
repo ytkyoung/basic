@@ -14,8 +14,9 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const HomeStart = (props) => {
-  console.log(props);
+const HomeStart = ({ theme }) => {
+  console.log(theme);
+  console.log('props');
   return (
     <HomeStartSection>
       <motion.div
@@ -25,10 +26,10 @@ const HomeStart = (props) => {
         animate="show"
       >
         <HomeSection />
-        <ServicesSection />
-        <FeaturedEngagements />
+        <ServicesSection theme={theme} />
+        <FeaturedEngagements theme={theme} />
         <Spotlight />
-        <FeaturedNews />
+        <FeaturedNews theme={theme} />
         {/* <Krisel /> */}
         <ScrollTop />
       </motion.div>

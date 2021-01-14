@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-import LogoBlack from '../components/LogoBrandBlack';
-import LogoWhite from '../components/LogoBrandWhite';
+import LogoBrandPink from '../components/LogoBrandPink';
+import LogoBrandBlack from '../components/LogoBrandBlack';
 
 const LogoBranding = ({ theme }) => {
   const isLight = theme === 'light';
   return (
     <LogoStyle>
-      <div className="logo-box">{isLight ? <LogoWhite /> : <LogoBlack />}</div>
+      <div className="logo-box">
+        {isLight ? <LogoBrandBlack /> : <LogoBrandPink />}
+      </div>
     </LogoStyle>
   );
 };

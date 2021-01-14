@@ -1,7 +1,10 @@
 import styled from 'styled-components';
-import LogoBranding from '../components/LogoBranding';
+import LogoBrandingWork from '../components/LogoBrandingWork';
+import { Link } from 'react-router-dom';
 
-const ServicesSection = () => {
+const ServicesSection = ({ theme }) => {
+  console.log(theme);
+  console.log('hallo theme');
   return (
     <ServiceStyle>
       <div className="services">
@@ -12,10 +15,12 @@ const ServicesSection = () => {
             agency building products, services, and ecommerce experiences that
             turn cultural values into company value.
           </h2>
-          <button>SEE THE WORK</button>
+          <button>
+            <Link to="/work">SEE THE WORK</Link>
+          </button>
         </div>
         <div className="branding">
-          <LogoBranding />
+          <LogoBrandingWork theme={theme} />
         </div>
       </div>
     </ServiceStyle>
@@ -24,8 +29,8 @@ const ServicesSection = () => {
 const ServiceStyle = styled.div`
   margin: 2rem 0rem;
   padding: 1rem 0rem;
-  border-top: 1px solid #252422;
-  border-bottom: 1px solid #252422;
+  border-top: 1px solid ${({ theme }) => theme.text};
+  border-bottom: 1px solid ${({ theme }) => theme.text};
   .services {
     height: 55vh;
     display: flex;

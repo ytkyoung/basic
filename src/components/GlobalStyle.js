@@ -48,13 +48,6 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-
-    /* @media (max-width: 1700px) {
-      font-size: 80%;
-    }
-    @media (max-width: 1500px) {
-      font-size: 80%;
-    } */
   }
 
   body {
@@ -80,9 +73,16 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 16px;
     transition: all 0.5s ease;
     outline:none;
-    &:hover {
+    a{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    &:hover{
       background-color: ${({ theme }) => theme.text};
-      color: white;
+      color: ${({ theme }) => theme.button};
+    }
+    &:hover a{
+      color: ${({ theme }) => theme.buttonHover};
     }
   }
 
@@ -126,15 +126,16 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1rem;
     text-decoration: none;
     font-family: var(--font-regular);
-    ${({ theme }) => theme.text}
+    color: ${({ theme }) => theme.text}
   }
+
   ul {
     list-style: none;
   }
 
   span {
     font-weight: bold;
-    color: var(--color-font-black);
+    color: ${({ theme }) => theme.text};
   }
 
   p {

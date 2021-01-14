@@ -3,11 +3,17 @@ import styled from 'styled-components';
 const Card = (props) => {
   console.log(props);
   console.log(props.brand.title);
+  console.log(props.theme);
+  const isLight = props.theme === 'light';
   return (
     <div className="card">
       <CardItem>
         <div className="brand-logo">
-          <img src={props.brand.icon} alt={props.brand.title} />
+          {isLight ? (
+            <img src={props.brand.icon} alt={props.brand.title} />
+          ) : (
+            <img src={props.brand.iconlight} alt={props.brand.title} />
+          )}
         </div>
         <div className="card-line"></div>
         <div className="card-title">
@@ -25,7 +31,7 @@ const Card = (props) => {
 const CardItem = styled.div`
   width: 300px;
   .brand-logo {
-    width: 50%;
+    width: 60%;
     height: 50px;
     img {
       width: 70%;

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const ContactOfficesItem = (props) => {
-  console.log(props.office.id);
+  // console.log(props.office.id);
+  // console.log(props.theme);
+  // console.log('props.theme');
   return (
     <OfficeStyle>
       <SlotNo1>

@@ -6,7 +6,8 @@ import { ThemeProvider } from 'styled-components';
 
 // console.log(data);
 
-const FeaturedEngagements = () => {
+const FeaturedEngagements = (props) => {
+  console.log(props);
   return (
     <>
       <Featured>
@@ -19,7 +20,7 @@ const FeaturedEngagements = () => {
         <div className="brands-cards">
           <div className="cards">
             {data.map((brand, index) => (
-              <Card key={index} brand={brand} />
+              <Card key={index} brand={brand} theme={props.theme} />
             ))}
           </div>
         </div>

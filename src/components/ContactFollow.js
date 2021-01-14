@@ -60,7 +60,7 @@ const Follow = styled.section`
     a {
       font-size: 1.8rem;
       text-decoration: underline;
-      color: var(--color-font-black);
+      color: ${({ theme }) => theme.text};
     }
   }
   .wrapper-box {
@@ -80,7 +80,7 @@ const Follow = styled.section`
   .line {
     height: 0.1rem;
     width: 100%;
-    background: var(--color-font-black);
+    background: ${({ theme }) => theme.text};
   }
 
   .box2 {

@@ -1,10 +1,8 @@
-import icon from '../img/arrow-black.svg';
+import logoFooter from '../img/footer-logo-bg-black.svg';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const IconArrow = ({ theme }) => {
-  console.log(theme);
-  console.log('asdasda');
+const LogoBrandingBlack = () => {
   const buttonVariants = {
     hidden: {
       opacity: 0,
@@ -22,16 +20,11 @@ const IconArrow = ({ theme }) => {
     hover: {
       scale: 1.1,
       originX: 0,
-      transition: {
-        ease: 'easeOut',
-        duration: 1,
-        repeat: Infinity,
-      },
     },
   };
 
   return (
-    <TestStyle>
+    <LogoStyle>
       <motion.div
         className="logo-box"
         variants={buttonVariants}
@@ -44,19 +37,15 @@ const IconArrow = ({ theme }) => {
           stiffness: 120,
         }}
       >
-        <img src={icon} alt="arrow" />
+        <img src={logoFooter} alt="logo basic" />
       </motion.div>
-    </TestStyle>
+    </LogoStyle>
   );
 };
 
-const TestStyle = styled.div`
-  .logo-box {
-    width: 2.5rem;
-  }
-  .logo-box img {
-    width: 100%;
+const LogoStyle = styled.div`
+  .logo-box svg {
   }
 `;
 
-export default IconArrow;
+export default LogoBrandingBlack;

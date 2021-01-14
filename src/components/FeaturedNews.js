@@ -2,7 +2,7 @@ import FeaturedNewsItem from '../components/FeaturedNewsItem';
 import data from '../data/fnews.json';
 import styled from 'styled-components';
 
-const FeaturedNews = () => {
+const FeaturedNews = ({ theme }) => {
   return (
     <NewsStyle>
       <div className="featured-news">
@@ -14,7 +14,7 @@ const FeaturedNews = () => {
         </div>
         <div className="news-box">
           {data.map((news, index) => (
-            <FeaturedNewsItem key={index} news={news} />
+            <FeaturedNewsItem key={index} news={news} theme={theme} />
           ))}
         </div>
       </div>

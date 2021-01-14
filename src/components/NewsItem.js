@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import { NewsStyle } from '../styles.js';
-import IconArrow from '../components/IconArrow';
+
+import iconBlack from '../img/arrow-black.svg';
+import iconPink from '../img/arrow.svg';
 
 const NewsItem = (props) => {
+  const isLight = props.theme === 'light';
   return (
     <NewsItemStyle>
       <div className="news">
@@ -23,7 +26,11 @@ const NewsItem = (props) => {
           </div>
         </div>
         <div className="news-arrow">
-          <IconArrow />
+          {isLight ? (
+            <img src={iconBlack} alt="arrow" />
+          ) : (
+            <img src={iconPink} alt="arrow" />
+          )}
         </div>
       </div>
     </NewsItemStyle>
@@ -31,6 +38,14 @@ const NewsItem = (props) => {
 };
 
 const NewsItemStyle = styled(NewsStyle)`
+  .news-arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    img {
+      width: 20%;
+    }
+  }
   h2 {
     text-transform: none;
     line-height: 100%;

@@ -5,7 +5,7 @@ import ScrollTop from '../components/ScrollTop';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 import styled from 'styled-components';
-const News = () => {
+const News = ({ theme }) => {
   return (
     <NewsSection>
       <motion.div
@@ -15,7 +15,7 @@ const News = () => {
         animate="show"
       >
         <NewsIntro />
-        <NewsListing />
+        <NewsListing theme={theme} />
         <ScrollTop />
       </motion.div>
     </NewsSection>

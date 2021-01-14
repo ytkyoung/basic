@@ -42,7 +42,7 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
             <Route path="/" exact>
-              <HomeStart />
+              <HomeStart theme={theme} />
             </Route>
             <Route path="/work" exact>
               <Work />
@@ -54,13 +54,13 @@ function App() {
               <About />
             </Route>
             <Route path="/News">
-              <News />
+              <News theme={theme} />
             </Route>
             <Route path="/thinking">
-              <Thinking />
+              <Thinking theme={theme} />
             </Route>
             <Route path="/contact">
-              <Contact />
+              <Contact theme={theme} />
             </Route>
           </Switch>
         </AnimatePresence>
