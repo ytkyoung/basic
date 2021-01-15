@@ -39,7 +39,11 @@ const TestStyle = styled.div`
     }
     button {
       color: #f4f4f4;
-      padding: 0;
+      border: none;
+    }
+    button:hover {
+      color: #252422;
+      border: none;
     }
   }
   .showhi {

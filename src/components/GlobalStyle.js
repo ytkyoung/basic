@@ -62,7 +62,6 @@ const GlobalStyle = createGlobalStyle`
   }
   button {
     background-color: transparent;
-    border: none;
     color: ${({ theme }) => theme.text};
     padding: 10px 20px;
     text-align: center;
@@ -100,7 +99,6 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 3rem;
-    font-weight: regular;
     font-family: var(--font-bold);
     line-height: 90%;
     color: ${({ theme }) => theme.text};

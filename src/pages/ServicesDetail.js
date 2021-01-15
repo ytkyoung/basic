@@ -34,8 +34,9 @@ const ServicesDetail = () => {
         >
           <Headline>
             <h2>{movie.title}</h2>
-
-            <img src={movie.projects[1].mainImg} alt="movie" />
+            <h2>{movie.title1}</h2>
+            <img src={movie.mainImg} alt="movie" />
+            <p>{movie.description}</p>
           </Headline>
           <ScrollTop />
         </Details>
@@ -48,7 +49,8 @@ const Details = styled(motion.div)`
   /* background: red; */
 `;
 const Headline = styled.div`
-  /* background: blue; */
+  background: blue;
+  display: flex;
 `;
 
 export default ServicesDetail;

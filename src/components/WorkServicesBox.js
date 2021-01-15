@@ -25,9 +25,11 @@ class WorkServiceBox extends React.Component {
         <SlotNo2>
           <motion.div
             className="box-box1"
-            whileHover={{ backgroundColor: 'rgba(37, 36, 34, 0.03)' }}
+            whileHover={{
+              backgroundColor: 'rgba(37, 36, 34, 0.03)',
+            }}
             whileTap={{
-              scale: 0.8,
+              scale: 0.95,
             }}
           >
             <div className="wrapper">
@@ -39,7 +41,7 @@ class WorkServiceBox extends React.Component {
                   />
                 </video>
               ) : (
-                <Link to={service.url}>
+                <Link to={service.projects[0].url}>
                   <img src={service.projects[0].mainImg} alt="" />
                 </Link>
               )}
@@ -56,7 +58,7 @@ class WorkServiceBox extends React.Component {
             }}
           >
             <div className="wrapper">
-              <Link to={service.url}>
+              <Link to={service.projects[1].url}>
                 <img src={service.projects[1].mainImg} alt="" />
               </Link>
             </div>
@@ -93,6 +95,7 @@ const SlotNo1 = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  border-right: 1px solid ${({ theme }) => theme.text};
   .learn {
     margin-bottom: 50%;
   }
@@ -143,7 +146,6 @@ const SlotNo2 = styled.div`
       filter: grayscale(0);
       transform: scale(1);
     }
-    border-left: 1px solid ${({ theme }) => theme.text};
   }
   .box-box2 {
     padding-left: 3rem;

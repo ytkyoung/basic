@@ -57,6 +57,13 @@ const TestWrapper = styled.div`
   }
   button {
     border: 50%;
+    border: 2px solid #f9cdcd;
+  }
+  button:hover {
+    background-color: #f9cdcd;
+    h2 {
+      color: #252422;
+    }
   }
 `;
 
