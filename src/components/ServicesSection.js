@@ -68,9 +68,22 @@ const ServiceStyle = styled.div`
     .services {
       flex-direction: column;
       height: 40vh;
+
+      h2 {
+        width: 70%;
+        font-size: 2.2rem;
+        font-family: 'Scto Grotesk A Medium';
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
     }
     .branding {
-      flex-direction: column;
+      width: 70%;
+      display: flex;
+      padding-top: 2rem;
+      justify-content: flex-end;
+      align-self: flex-end;
     }
   }
 `;

@@ -3,9 +3,9 @@ import { NewsStyle } from '../styles.js';
 
 import iconBlack from '../img/arrow-black.svg';
 import iconPink from '../img/arrow.svg';
-
 const NewsItem = (props) => {
   const isLight = props.theme === 'light';
+
   return (
     <NewsItemStyle>
       <div className="news">

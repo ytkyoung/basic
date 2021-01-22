@@ -12,10 +12,7 @@ const FeaturedEngagements = (props) => {
     <>
       <Featured>
         <div className="description">
-          <h2>
-            FEATURED <br />
-            ENGAGEMENTS
-          </h2>
+          <h2>FEATURED ENGAGEMENTS</h2>
         </div>
         <div className="brands-cards">
           <div className="cards">

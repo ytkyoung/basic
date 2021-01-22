@@ -62,6 +62,10 @@ const HomeIntro = styled.div`
   @media (max-width: 890px) {
     background: magenta;
     flex-direction: column;
+    min-height: 20vh;
+    h1 {
+      font-size: 4rem;
+    }
   }
 `;
 

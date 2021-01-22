@@ -59,9 +59,11 @@ const Description = styled.div`
     margin-top: 3rem;
   }
   @media (max-width: 890px) {
+    padding-top: 6rem;
     h2 {
-      font-size: 7rem;
+      font-size: 4rem;
     }
+    order: 2;
   }
 `;
 
@@ -78,6 +80,11 @@ const CultureVideo = styled.div`
   }
   @media (max-width: 890px) {
     margin-top: 3rem;
+    video {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }
   }
 `;
 

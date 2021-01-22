@@ -82,6 +82,33 @@ const FeaturedStyle = styled.div`
       width: 20%;
     }
   }
+  @media (max-width: 890px) {
+    background: magenta;
+    align-items: space-between;
+    .news {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .news-title {
+      width: 100%;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .news-info {
+    height: 10vh;
+  }
+  .news-arrow {
+    flex: 1 1 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    img {
+      width: 10%;
+    }
+  }
 `;
 
 export default FeaturedNewsItem;
