@@ -21,9 +21,16 @@ const Box = styled.div`
   transition: all 0.5s ease;
   .hover-image {
     width: 500px;
-    & img {
+    img {
       width: 100%;
     }
+  }
+  @media (max-width: 890px) {
+    background: #ff7b00;
+    .hover-image {
+      width: 300px;
+    }
+  }
 `;
 
 export default TestBox2;

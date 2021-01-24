@@ -103,6 +103,9 @@ const SlotNo1 = styled.div`
     .learn {
       margin-bottom: 10%;
     }
+    p {
+      font-size: 1.4rem;
+    }
   }
 `;
 
@@ -161,6 +164,29 @@ const SlotNo2 = styled.div`
     &:hover img {
       filter: grayscale(0);
       transform: scale(1);
+    }
+  }
+  @media (max-width: 890px) {
+    flex-direction: column;
+    .box-box1 {
+      flex: 1 1 100%;
+      padding-left: 0rem;
+    }
+    .box-box2 {
+      padding-left: 0rem;
+      flex: 1 1 100%;
+    }
+    h3 {
+      font-size: 1.8rem;
+      padding-top: 2rem;
+      font-family: var(--font-bold);
+    }
+    p {
+      font-size: 1.2rem;
+      padding: 1rem 0rem;
+      width: 60%;
+      font-family: var(--font-regular);
+      line-height: 1.3rem;
     }
   }
 `;

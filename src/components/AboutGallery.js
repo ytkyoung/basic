@@ -26,6 +26,9 @@ const AboutGallery = () => {
 const TestWrapper = styled.div`
   position: relative;
   height: 200vh;
+  @media (max-width: 890px) {
+    height: 60vh;
+  }
 `;
 
 const Pos1 = styled.div`
@@ -39,6 +42,11 @@ const Pos1 = styled.div`
     z-index: 100;
     filter: grayscale(10%);
   }
+  @media (max-width: 890px) {
+    background: magenta;
+    top: 5%;
+    left: 0%;
+  }
 `;
 
 const Pos2 = styled.div`
@@ -50,6 +58,11 @@ const Pos2 = styled.div`
   &:hover {
     z-index: 100;
     filter: grayscale(10%);
+  }
+  @media (max-width: 890px) {
+    background: #722a72;
+    top: 15%;
+    left: 10%;
   }
 `;
 
@@ -63,6 +76,11 @@ const Pos3 = styled.div`
     z-index: 100;
     filter: grayscale(10%);
   }
+  @media (max-width: 890px) {
+    background: #5c722a;
+    top: 10%;
+    left: 30%;
+  }
 `;
 
 const Pos4 = styled.div`
@@ -74,6 +92,11 @@ const Pos4 = styled.div`
   &:hover {
     z-index: 100;
     filter: grayscale(10%);
+  }
+  @media (max-width: 890px) {
+    background: #72502a;
+    top: 25%;
+    left: 25%;
   }
 `;
 

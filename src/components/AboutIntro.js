@@ -59,8 +59,23 @@ const AboutIntroStyle = styled.section`
     line-height: 110%;
   }
   @media (max-width: 890px) {
+    height: 40%;
     background: magenta;
     flex-direction: column;
+    h1 {
+      font-size: 4rem;
+    }
+    .About-intro-title {
+      flex: 1 1 50%;
+      padding-top: 3%;
+      align-self: flex-start;
+    }
+    .About-intro-title-part2 {
+      flex: 1 1 50%;
+      padding: 0;
+      padding-top: 10%;
+      align-self: flex-end;
+    }
   }
 `;
 

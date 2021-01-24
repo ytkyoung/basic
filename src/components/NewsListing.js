@@ -2,15 +2,17 @@ import styled from 'styled-components';
 
 import NewsItem from '../components/NewsItem';
 import data from '../data/news.json';
+import { motion } from 'framer-motion';
+import { titleAnim, fade } from '../animation';
 
 const NewsListing = ({ theme }) => {
   return (
     <SnapStyle>
-      <div className="news-lists">
+      <motion.div className="news-lists" variants={(titleAnim, fade)}>
         {data.map((news, index) => (
           <NewsItem key={index} news={news} theme={theme} />
         ))}
-      </div>
+      </motion.div>
     </SnapStyle>
   );
 };

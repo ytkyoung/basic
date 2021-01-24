@@ -24,6 +24,13 @@ const Box = styled.div`
     & img {
       width: 100%;
     }
+  }
+  @media (max-width: 890px) {
+    background: magenta;
+    .hover-image {
+      width: 300px;
+    }
+  }
 `;
 
 export default TestBox4;

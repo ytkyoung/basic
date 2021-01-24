@@ -27,6 +27,12 @@ const Box = styled.div`
       width: 100%;
     }
   }
+  @media (max-width: 890px) {
+    background: #00ffdd;
+    .hover-image {
+      width: 300px;
+    }
+  }
 `;
 
 export default TestBox1;

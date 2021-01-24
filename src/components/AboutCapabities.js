@@ -47,6 +47,18 @@ const SnapStyle = styled.div`
       width: 80%;
     }
   }
+  @media (max-width: 890px) {
+    background: red;
+  }
+  .capa-title {
+    flex: 1 1 100%;
+    h2 {
+      width: 50%;
+    }
+  }
+  .capa-lists {
+    flex: 1 1 100%;
+  }
 `;
 
 export default AboutCapabities;

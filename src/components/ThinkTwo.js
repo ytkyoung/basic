@@ -55,6 +55,25 @@ const ThinkStyle = styled.section`
   & div:nth-child(3) {
     flex: 1 1 40%;
   }
+  @media (max-width: 890px) {
+    p {
+      font-size: 1.6rem;
+    }
+    .wrapper-think {
+      flex-direction: column;
+    }
+    & div:nth-child(1) {
+      flex: 1 1 30%;
+    }
+    & div:nth-child(2) {
+      flex: 1 1 30%;
+      margin-top: 5rem;
+      margin-left: 0rem;
+    }
+    & div:nth-child(3) {
+      flex: 1 1 40%;
+    }
+  }
 `;
 
 export default ThinkTwo;

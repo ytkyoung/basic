@@ -65,8 +65,19 @@ export const Intro = styled.section`
     background: magenta;
     flex-direction: column;
     h1 {
-      font-size: 7rem;
+      width: 50%;
+      font-size: 4rem;
       line-height: 90%;
+    }
+    p {
+      width: 60%;
+      font-size: 1.5rem;
+      font-weight: var(--font-regular);
+    }
+    & div:nth-child(2) {
+      flex: 1 1 50%;
+      padding: 2rem 0rem;
+      align-self: flex-end;
     }
   }
 `;

@@ -84,7 +84,6 @@ const FeaturedStyle = styled.div`
   }
   @media (max-width: 890px) {
     background: magenta;
-    align-items: space-between;
     .news {
       display: flex;
       justify-content: space-between;
@@ -96,17 +95,18 @@ const FeaturedStyle = styled.div`
         font-size: 2.5rem;
       }
     }
-  }
-  .news-info {
-    height: 10vh;
-  }
-  .news-arrow {
-    flex: 1 1 10%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    img {
+    .news-info {
+      height: 10vh;
+    }
+    .news-arrow {
+      flex: 1 1 10%;
       width: 10%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      img {
+        width: 20%;
+      }
     }
   }
 `;

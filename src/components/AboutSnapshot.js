@@ -48,6 +48,18 @@ const SnapStyle = styled.div`
       width: 80%;
     }
   }
+  @media (max-width: 890px) {
+    flex-direction: column;
+    .snap-card {
+      flex: 1 1 100%;
+      h2 {
+        padding-bottom: 2rem;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
 `;
 
 export default AboutSnapshot;

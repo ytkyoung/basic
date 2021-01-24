@@ -35,6 +35,16 @@ const ItemWrapper = styled.div`
       opacity: 1 !important;
     }
   }
+  @media (max-width: 890px) {
+    .award-title {
+      h2 {
+        font-size: 5.5rem;
+      }
+      h5 {
+        font-size: 2rem;
+      }
+    }
+  }
 `;
 
 export default AboutAwardsItem;

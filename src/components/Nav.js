@@ -120,6 +120,24 @@ const StyledNav = styled(motion.nav)`
   .three {
     flex: 1 1 20%;
   }
+  @media (max-width: 890px) {
+    .Bground {
+      min-height: 15vh;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0rem 5rem 2rem;
+    }
+    ul {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      order: 2;
+    }
+    a {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const Line = styled(motion.div)`
