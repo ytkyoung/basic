@@ -57,10 +57,8 @@ const HomeIntro = styled.div`
     }
   }
   @media (max-width: 1300px) {
-    background: green;
   }
   @media (max-width: 890px) {
-    background: magenta;
     flex-direction: column;
     min-height: 20vh;
     h1 {

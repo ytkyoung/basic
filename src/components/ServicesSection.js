@@ -59,11 +59,10 @@ const ServiceStyle = styled.div`
     justify-content: flex-end;
     align-self: flex-start;
   }
-  @media (max-width: 1300px) {
+  /* @media (max-width: 1300px) {
     background: green;
-  }
+  } */
   @media (max-width: 890px) {
-    background: magenta;
     flex-direction: column;
     .services {
       flex-direction: column;

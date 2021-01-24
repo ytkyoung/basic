@@ -122,7 +122,7 @@ const StyledNav = styled(motion.nav)`
   }
   @media (max-width: 890px) {
     .Bground {
-      min-height: 15vh;
+      min-height: 20vh;
       display: flex;
       flex-direction: column;
       padding: 2rem 0rem 5rem 2rem;

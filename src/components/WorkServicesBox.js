@@ -81,7 +81,6 @@ const Huhu = styled.div`
   }
   @media (max-width: 890px) {
     height: 100%;
-    background: magenta;
     flex-direction: column;
     &:last-child {
       margin-bottom: 1rem;
@@ -100,6 +99,7 @@ const SlotNo1 = styled.div`
     margin-bottom: 50%;
   }
   @media (max-width: 890px) {
+    border-right: none;
     .learn {
       margin-bottom: 10%;
     }

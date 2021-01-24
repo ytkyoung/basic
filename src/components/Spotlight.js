@@ -45,7 +45,6 @@ const SpotLight = styled.section`
   justify-content: space-between;
   align-items: flex-start;
   @media (max-width: 890px) {
-    background: magenta;
     flex-direction: column;
   }
 `;

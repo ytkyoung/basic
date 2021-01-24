@@ -10,9 +10,9 @@ const AboutSnapshotItem = (props) => {
             {props.shot.stat}
             {props.shot.unit}
           </h1>
-        </div>
-        <div className="snap-card-text">
-          <p>{props.shot.text}</p>
+          <div className="snap-card-text">
+            <p>{props.shot.text}</p>
+          </div>
         </div>
       </div>
     </>

@@ -62,7 +62,6 @@ export const Intro = styled.section`
   }
   @media (max-width: 890px) {
     height: 100%;
-    background: magenta;
     flex-direction: column;
     h1 {
       width: 50%;
@@ -139,5 +138,40 @@ export const NewsStyle = styled.div`
     flex: 1 1 10%;
     display: flex;
     justify-content: flex-end;
+  }
+  @media (max-width: 890px) {
+    padding: 2.2rem 0rem 2rem 0rem;
+    .news {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
+    }
+    .news-box {
+      padding-left: 0rem;
+    }
+    .news-title {
+      width: 100%;
+      padding: 0;
+      padding-top: 2rem;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .news-info {
+      height: 10vh;
+      align-items: flex-end;
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+    .news-arrow {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      img {
+        width: 5%;
+      }
+    }
   }
 `;

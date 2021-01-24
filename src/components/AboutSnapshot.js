@@ -51,6 +51,8 @@ const SnapStyle = styled.div`
   @media (max-width: 890px) {
     flex-direction: column;
     .snap-card {
+      display: flex;
+      padding-top: 4rem;
       flex: 1 1 100%;
       h2 {
         padding-bottom: 2rem;
@@ -58,6 +60,18 @@ const SnapStyle = styled.div`
       p {
         width: 80%;
       }
+    }
+    .snap-card-title {
+      flex: 1 1 33.333%;
+    }
+    .snap-card-stat {
+      flex: 1 1 33.333%;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    .snap-card-text {
+      flex: 1 1 33.333%;
     }
   }
 `;

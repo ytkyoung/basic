@@ -163,7 +163,6 @@ const FooterStyle = styled.footer`
   @media (max-width: 890px) {
     display: flex;
     flex-direction: column;
-    background: magenta;
     .footer-intro {
       padding-top: 3rem;
       flex-direction: column;

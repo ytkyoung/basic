@@ -83,29 +83,37 @@ const FeaturedStyle = styled.div`
     }
   }
   @media (max-width: 890px) {
-    background: magenta;
+    padding: 2.2rem 0rem 2rem 0rem;
     .news {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      position: relative;
+    }
+    .news-box {
+      padding-left: 0rem;
     }
     .news-title {
       width: 100%;
+      padding: 0;
+      padding-top: 2rem;
       h2 {
         font-size: 2.5rem;
       }
     }
     .news-info {
       height: 10vh;
+      align-items: flex-end;
+      h4 {
+        font-size: 1.3rem;
+      }
     }
     .news-arrow {
-      flex: 1 1 10%;
-      width: 10%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 0;
       img {
-        width: 20%;
+        width: 10%;
       }
     }
   }

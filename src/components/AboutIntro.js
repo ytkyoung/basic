@@ -60,7 +60,6 @@ const AboutIntroStyle = styled.section`
   }
   @media (max-width: 890px) {
     height: 40%;
-    background: magenta;
     flex-direction: column;
     h1 {
       font-size: 4rem;

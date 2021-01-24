@@ -131,6 +131,29 @@ const ContactStyle = styled.div`
       text-decoration: underline;
     }
   }
+  @media (max-width: 890px) {
+    flex-direction: column;
+    .contact-hero {
+      img {
+        width: 100%;
+      }
+      margin-bottom: 5vh;
+    }
+    .contact-intro {
+      padding-left: 0rem;
+    }
+    .contact-title {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    .contact-point {
+      flex: 1 1 20%;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
 `;
 
 export default ContactIntro;

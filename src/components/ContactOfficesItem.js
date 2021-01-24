@@ -89,6 +89,20 @@ const SlotNo2 = styled.div`
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 890px) {
+    flex-direction: column;
+  }
+  .office-date {
+    h3 {
+      font-size: 1.4rem;
+      padding-bottom: 3rem;
+    }
+  }
+  .office-title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export default ContactOfficesItem;
