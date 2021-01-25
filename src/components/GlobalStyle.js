@@ -102,6 +102,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--font-bold);
     line-height: 90%;
     color: ${({ theme }) => theme.text};
+    letter-spacing: -0.07rem;
   }
   h3 {
     font-size: 2rem;

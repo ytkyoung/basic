@@ -72,7 +72,7 @@ const Footer = ({ theme }) => {
 const FooterStyle = styled.footer`
   background-color: ${({ theme }) => theme.footerBG};
   margin: 0 auto;
-
+  margin-top: 5rem;
   h2,
   h5 {
     color: ${({ theme }) => theme.footerColor};
@@ -95,7 +95,7 @@ const FooterStyle = styled.footer`
   .brand-logo-icon {
     flex: 1 2 50%;
     img {
-      width: 15%;
+      width: 20%;
     }
   }
   .footer-bottom {
@@ -139,6 +139,7 @@ const FooterStyle = styled.footer`
     h2 {
       font-size: 2rem;
       font-family: var(--font-regular);
+      letter-spacing: 0.1rem;
     }
     ul {
       padding-top: 2rem;
@@ -164,17 +165,30 @@ const FooterStyle = styled.footer`
     display: flex;
     flex-direction: column;
     .footer-intro {
+      height: 33vh;
       padding-top: 3rem;
       flex-direction: column;
-      position: relative;
     }
     .brand-logo-icon {
-      padding: 0;
-      position: absolute;
-      top: 45%;
-      left: 5%;
+      align-self: flex-start;
+      order: 1;
+      padding-top: 3rem;
       img {
-        width: 100%;
+        width: 30%;
+      }
+    }
+    .footer-title {
+      order: 2;
+      h2 {
+        width: 90%;
+        font-size: 2.2rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+    .footer-email {
+      h2 {
+        font-size: 1.4rem;
+        letter-spacing: 0.05rem;
       }
     }
     .footer-bottom {
@@ -184,14 +198,36 @@ const FooterStyle = styled.footer`
     .footer-overview {
       height: 100%;
       flex-direction: column;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+      ul {
+        padding-top: 2rem;
+      }
+      ul li {
+        font-size: 1.4rem;
+      }
       & div:nth-child(1) {
-        padding-top: 10rem;
+        padding-top: 6rem;
       }
       & div:last-child {
-        padding-bottom: 15rem;
+        padding-bottom: 10rem;
       }
       & div {
-        padding-top: 3rem;
+        padding-top: 6rem;
+      }
+    }
+    .footer-credits {
+      min-height: 15vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.055);
+      h5 {
+        padding-bottom: 1rem;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.349);
       }
     }
   }

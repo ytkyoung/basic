@@ -61,8 +61,19 @@ const HomeIntro = styled.div`
   @media (max-width: 890px) {
     flex-direction: column;
     min-height: 20vh;
-    h1 {
-      font-size: 4rem;
+    .home-title1 {
+      h1 {
+        width: 40%;
+        font-size: 4.5rem;
+        letter-spacing: -2px;
+      }
+    }
+    .home-title2 {
+      h1 {
+        width: 40%;
+        font-size: 4.5rem;
+        letter-spacing: -2px;
+      }
     }
   }
 `;
@@ -79,6 +90,9 @@ const Point = styled(motion.div)`
   font-size: 9rem;
   position: relative;
   right: 7%;
+  @media (max-width: 890px) {
+    font-size: 5rem;
+  }
 `;
 
 const HeroVideo = styled(motion.div)`

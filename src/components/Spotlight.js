@@ -63,6 +63,11 @@ const Description = styled.div`
       font-size: 4rem;
     }
     order: 2;
+    .spotlight-title {
+      h2 {
+        font-size: 4.8rem;
+      }
+    }
   }
 `;
 
@@ -81,7 +86,7 @@ const CultureVideo = styled.div`
     margin-top: 3rem;
     video {
       width: 100%;
-      height: 60vh;
+      height: 75vh;
       object-fit: cover;
     }
   }
@@ -112,6 +117,16 @@ const TopText = styled.div`
   h1:hover {
     color: #f9cdcd;
     opacity: 1;
+    span {
+      color: black;
+    }
+  }
+  @media (max-width: 890px) {
+    h1 {
+      color: #fff;
+      font-size: 20vw;
+      opacity: 0.7;
+    }
   }
 `;
 

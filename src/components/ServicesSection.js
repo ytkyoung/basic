@@ -64,23 +64,24 @@ const ServiceStyle = styled.div`
   } */
   @media (max-width: 890px) {
     flex-direction: column;
+    padding-top: 2rem;
     .services {
       flex-direction: column;
-      height: 40vh;
-
+      height: 100%;
       h2 {
-        width: 70%;
-        font-size: 2.2rem;
-        font-family: 'Scto Grotesk A Medium';
+        padding-top: 8rem;
+        width: 80%;
+        font-size: 2.1rem;
+        font-family: 'Scto Grotesk A Regular';
       }
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
     .branding {
       width: 70%;
       display: flex;
-      padding-top: 2rem;
+      padding: 5rem 0rem;
       justify-content: flex-end;
       align-self: flex-end;
     }

@@ -36,7 +36,7 @@ const FeaturedNewsItem = (props) => {
 };
 
 const FeaturedStyle = styled.div`
-  border-top: 2px solid ${({ theme }) => theme.text};
+  border-top: 1px solid ${({ theme }) => theme.text};
   padding: 2.2rem 0rem 6.7rem 0rem;
   .news {
     display: flex;
@@ -101,11 +101,16 @@ const FeaturedStyle = styled.div`
         font-size: 2.5rem;
       }
     }
+    .news-category {
+      h4 {
+        font-family: 'Scto Grotesk A Bold';
+      }
+    }
     .news-info {
-      height: 10vh;
+      height: 8vh;
       align-items: flex-end;
       h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
     }
     .news-arrow {
@@ -113,7 +118,7 @@ const FeaturedStyle = styled.div`
       bottom: 0;
       right: 0;
       img {
-        width: 10%;
+        width: 14%;
       }
     }
   }

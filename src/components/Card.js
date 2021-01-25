@@ -52,6 +52,20 @@ const CardItem = styled.div`
       padding: 10rem 0rem 1rem 0rem;
     }
   }
+  @media (max-width: 890px) {
+    background: green;
+    .card-title {
+      h3 {
+        font-family: 'Scto Grotesk A Medium';
+        padding: 5rem 0rem 1rem 0rem;
+      }
+    }
+    .card-text {
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
 `;
 
 export default Card;

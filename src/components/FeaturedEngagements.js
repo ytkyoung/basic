@@ -69,6 +69,21 @@ const Featured = styled(FlexTest)`
       }
     }
   }
+  @media (max-width: 890px) {
+    height: 100%;
+    .description {
+      height: 15vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background: red;
+      h2 {
+        font-size: 2.3rem;
+        width: 50%;
+        line-height: 2.5rem;
+      }
+    }
+  }
 `;
 
 // Define our button, but with the use of props.theme this time
