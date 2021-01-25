@@ -7,7 +7,8 @@
     "description": "AN ECOMMERCE EXPERIENCE HELPING GOOGLE BRING ITS HARDWARE TO PEOPLE ACROSS THE GLOBE",
     "video": true,
     "mainVideo": "images/Google-Store.mp4",
-    "mainImg": "../images/Beats.jpg"
+    "mainImg": "../images/Beats.jpg",
+    "pic": "https://images.unsplash.com/photo-1536435316746-a0b5a1665819?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80"
   },
   {
     "id": 1,
@@ -17,7 +18,8 @@
     "url": "/work/test2",
     "title1": "Beats By Dre",
     "description": "ENGINEERING A DIGITAL DESTINATION THAT MOVES AT THE SPEED OF CULTURE",
-    "mainImg": "../images/Beats.jpg"
+    "mainImg": "../images/Beats.jpg",
+    "pic": "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo-pro/plp/bbd.plpassset.headphones.solopro.jpg.large.1x.jpg"
   },
   {
     "id": 2,
@@ -28,7 +30,8 @@
     "title1": "Fender Academy",
     "description": "A WEB SERVICE TO MAKE SALES TRAINING FEEL LESS LIKE WORK AND MORE LIKE PLAY",
     "video": false,
-    "mainImg": "../images/Fender.jpg"
+    "mainImg": "../images/Fender.jpg",
+    "pic": "../images/Fender.jpg"
   },
   {
     "id": 3,
@@ -39,7 +42,8 @@
     "title1": "American Express",
     "description": "LAYING A DESIGN FOUNDATION FOR FUTURE PRODUCTS AND SERVICES WITH THE OPEN APP",
     "video": false,
-    "mainImg": "../images/AMEX.jpg"
+    "mainImg": "../images/AMEX.jpg",
+    "pic": "../images/AMEX.jpg"
   },
   {
     "id": 4,
@@ -50,7 +54,8 @@
     "title1": "Riot Games",
     "description": "REVITALIZING THE RIOT GAMES BRAND WITH AN UPGRADED DIGITAL EXPERIENCE",
     "video": false,
-    "mainImg": "../images/Riot.jpg"
+    "mainImg": "../images/Riot.jpg",
+    "pic": "../images/Riot.jpg"
   },
   {
     "id": 5,
@@ -61,7 +66,8 @@
     "title1": "SoftBank Vision Fund",
     "description": "BUILDING A DIGITAL DESTINATION FOR THE LEADING TECH INVESTMENT FUND",
     "video": false,
-    "mainImg": "../images/Softbank.jpg"
+    "mainImg": "../images/Softbank.jpg",
+    "pic": "../images/Softbank.jpg"
   },
   {
     "id": 6,
@@ -72,7 +78,8 @@
     "title1": "NERD Skincare",
     "description": "DEVELOPING A BRAND THAT BROUGHT SCIENCE TO BEAUTY IN BOLD, UNEXPECTED WAYS",
     "video": false,
-    "mainImg": "../images/Nerd.jpg"
+    "mainImg": "../images/Nerd.jpg",
+    "pic": "../images/Nerd.jpg"
   },
   {
     "id": 7,
@@ -83,6 +90,7 @@
     "title1": "Brixton",
     "description": "HONORING THE PAST TO BUILD THE FUTURE OF THE BRIXTON BRAND",
     "video": false,
-    "mainImg": "../images/Brixton.jpg"
+    "mainImg": "../images/Brixton.jpg",
+    "pic": "../images/Brixton.jpg"
   }
 ]
