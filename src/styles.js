@@ -101,11 +101,20 @@ export const NewsStyle = styled.div`
   .news {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
   .news-img {
     flex: 1 1 30%;
     img {
       width: 100%;
+      object-fit: cover;
+      transform: scale(1.1);
+      transition: transform 0.5s, filter 1.5s ease-in-out;
+      filter: grayscale(50%);
+    }
+    &:hover img {
+      filter: grayscale(0);
+      transform: scale(1);
     }
   }
   .news-title {
@@ -118,7 +127,7 @@ export const NewsStyle = styled.div`
     }
   }
   .news-box {
-    padding-left: 2.2rem;
+    padding-left: 4rem;
     flex: 1 1 65%;
     display: flex;
     justify-content: space-between;

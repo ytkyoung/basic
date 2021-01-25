@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NewsStyle } from '../styles.js';
+import { Link } from 'react-router-dom';
 import iconBlack from '../img/arrow-black.svg';
 import iconPink from '../img/arrow.svg';
 
@@ -11,7 +12,9 @@ const Thinkitem = (props) => {
     <ThinkNews>
       <div className="news">
         <div className="news-img">
-          <img src={props.news.img} alt="news" />
+          <Link to="/work">
+            <img src={props.news.img} alt="news" />
+          </Link>
         </div>
         <div className="news-box">
           <div className="news-title">

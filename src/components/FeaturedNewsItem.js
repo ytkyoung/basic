@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import iconBlack from '../img/arrow-black.svg';
 import iconPink from '../img/arrow.svg';
+import { Link } from 'react-router-dom';
 
 const FeaturedNewsItem = (props) => {
   const isLight = props.theme === 'light';
@@ -8,7 +9,9 @@ const FeaturedNewsItem = (props) => {
     <FeaturedStyle>
       <div className="news">
         <div className="news-img">
-          <img src={props.news.img} alt="news" />
+          <Link to="/news">
+            <img src={props.news.img} alt="news" />
+          </Link>
         </div>
         <div className="news-box">
           <div className="news-title">
@@ -41,11 +44,20 @@ const FeaturedStyle = styled.div`
   .news {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
   .news-img {
     flex: 1 1 30%;
     img {
       width: 100%;
+      object-fit: cover;
+      transform: scale(1.1);
+      transition: transform 0.5s, filter 1.5s ease-in-out;
+      filter: grayscale(50%);
+    }
+    &:hover img {
+      filter: grayscale(0);
+      transform: scale(1);
     }
   }
   .news-title {
@@ -58,7 +70,7 @@ const FeaturedStyle = styled.div`
     }
   }
   .news-box {
-    padding-left: 2.2rem;
+    padding-left: 4rem;
     flex: 1 1 65%;
     display: flex;
     justify-content: space-between;

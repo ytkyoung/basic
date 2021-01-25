@@ -20,7 +20,7 @@ const Nav = ({ theme, toggletheme }) => {
           <Link to="/">{isLight ? <Logo /> : <LogoPink />}</Link>
         </div>
 
-        <ul>
+        <ul className="main-nav">
           <li>
             <Link to="/work">
               <h5>Work</h5>
@@ -100,7 +100,7 @@ const StyledNav = styled(motion.nav)`
     color: ${({ theme }) => theme.text};
     text-transform: uppercase;
   }
-  ul {
+  .main-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -124,15 +124,30 @@ const StyledNav = styled(motion.nav)`
     .Bground {
       min-height: 20vh;
       display: flex;
-      flex-direction: column;
-      padding: 2rem 0rem 5rem 2rem;
+      position: relative;
+      padding: 0;
     }
-    ul {
-      width: 90%;
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 0%;
+      flex: 1 1 50%;
+    }
+    .main-nav {
+      padding-top: 1rem;
+      flex: 1 1 100%;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       order: 2;
+    }
+
+    .three {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      flex: 1 1 50%;
     }
     a {
       font-size: 1.2rem;

@@ -65,6 +65,13 @@ const TestWrapper = styled.div`
       color: #252422;
     }
   }
+  @media (max-width: 890px) {
+    .button-box {
+      & h3:nth-child(1) {
+        display: none;
+      }
+    }
+  }
 `;
 
 export default Menu;

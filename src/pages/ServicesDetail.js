@@ -104,7 +104,8 @@ const Headline = styled.div`
     display: flex;
   }
   .detail-img {
-    overflow: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
     width: 100%;
     display: flex;
     padding-bottom: 3rem;
@@ -112,12 +113,15 @@ const Headline = styled.div`
       width: 100%;
     }
     & img:nth-child(1) {
+      scroll-snap-align: center;
       filter: hue-rotate(90deg);
     }
     & img:nth-child(2) {
-      filter: invert(100%);
+      scroll-snap-align: center;
+      filter: invert(20%);
     }
     & img:nth-child(3) {
+      scroll-snap-align: center;
       filter: hue-rotate(180deg);
     }
   }
