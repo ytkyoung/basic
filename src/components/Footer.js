@@ -225,9 +225,10 @@ const FooterStyle = styled.footer`
       align-items: center;
       background: rgba(0, 0, 0, 0.055);
       h5 {
+        opacity: 0.6;
         padding-bottom: 1rem;
         font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.349);
+        color: ${({ theme }) => theme.footerColor};
       }
     }
   }

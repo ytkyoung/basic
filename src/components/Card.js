@@ -53,7 +53,6 @@ const CardItem = styled.div`
     }
   }
   @media (max-width: 890px) {
-    background: green;
     .card-title {
       h3 {
         font-family: 'Scto Grotesk A Medium';

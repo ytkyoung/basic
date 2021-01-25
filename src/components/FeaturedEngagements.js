@@ -76,7 +76,6 @@ const Featured = styled(FlexTest)`
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      background: red;
       h2 {
         font-size: 2.3rem;
         width: 50%;
