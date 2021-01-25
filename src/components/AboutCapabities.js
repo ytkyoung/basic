@@ -49,29 +49,29 @@ const SnapStyle = styled.div`
   }
   @media (max-width: 890px) {
     flex-direction: column;
-  }
-  .capa-title {
-    flex: 1 1 100%;
-    margin-bottom: 8rem;
-    h2 {
-      width: 100%;
+    .capa-title {
+      flex: 1 1 100%;
+      margin-bottom: 8rem;
+      h2 {
+        width: 100%;
+      }
     }
-  }
-  .capa-lists {
-    flex: 1 1 50%;
-  }
+    .capa-lists {
+      flex: 1 1 50%;
+    }
 
-  .capa-card-title {
-    h2 {
-      font-size: 2rem;
-      padding-bottom: 2rem;
+    .capa-card-title {
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
     }
-  }
-  .capa-card-list {
-    li {
-      padding-top: 0.8rem;
-      font-size: 1.3rem;
-      width: 80%;
+    .capa-card-list {
+      li {
+        padding-top: 0.8rem;
+        font-size: 1.3rem;
+        width: 80%;
+      }
     }
   }
 `;

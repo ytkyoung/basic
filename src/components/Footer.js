@@ -178,7 +178,21 @@ const FooterStyle = styled.footer`
       }
     }
     .footer-bottom {
+      height: 100%;
       flex-direction: column;
+    }
+    .footer-overview {
+      height: 100%;
+      flex-direction: column;
+      & div:nth-child(1) {
+        padding-top: 10rem;
+      }
+      & div:last-child {
+        padding-bottom: 15rem;
+      }
+      & div {
+        padding-top: 3rem;
+      }
     }
   }
 `;
