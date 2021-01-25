@@ -27,7 +27,7 @@ const TestWrapper = styled.div`
   position: relative;
   height: 200vh;
   @media (max-width: 890px) {
-    height: 60vh;
+    height: 100vh;
   }
 `;
 
@@ -61,7 +61,7 @@ const Pos2 = styled.div`
   }
   @media (max-width: 890px) {
     background: #722a72;
-    top: 15%;
+    top: 20%;
     left: 10%;
   }
 `;
@@ -79,7 +79,7 @@ const Pos3 = styled.div`
   @media (max-width: 890px) {
     background: #5c722a;
     top: 10%;
-    left: 30%;
+    left: 25%;
   }
 `;
 
@@ -95,8 +95,8 @@ const Pos4 = styled.div`
   }
   @media (max-width: 890px) {
     background: #72502a;
-    top: 25%;
-    left: 25%;
+    top: 35%;
+    left: 23%;
   }
 `;
 
