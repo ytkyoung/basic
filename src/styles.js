@@ -27,8 +27,10 @@ export const IntroPlane = styled.section`
     font-weight: medium;
   }
   @media (max-width: 890px) {
+    height: 100%;
+    margin: 3rem 0rem;
     h2 {
-      font-size: 7rem;
+      font-size: 5rem;
       line-height: 90%;
     }
   }
@@ -141,6 +143,12 @@ export const NewsStyle = styled.div`
   }
   @media (max-width: 890px) {
     padding: 2.2rem 0rem 2rem 0rem;
+    height: 100%;
+    margin: 3rem 0rem;
+    h2 {
+      font-size: 5rem;
+      line-height: 90%;
+    }
     .news {
       display: flex;
       justify-content: space-between;

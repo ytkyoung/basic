@@ -36,7 +36,7 @@ const ThinkStyle = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 5rem;
   border-top: 1px solid ${({ theme }) => theme.text};
 
@@ -57,10 +57,15 @@ const ThinkStyle = styled.section`
   }
   @media (max-width: 890px) {
     p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     .wrapper-think {
       flex-direction: column;
+    }
+    .think-one {
+      h2 {
+        font-size: 2rem;
+      }
     }
     & div:nth-child(1) {
       flex: 1 1 30%;

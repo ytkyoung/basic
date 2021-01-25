@@ -44,7 +44,7 @@ const ThinkNews = styled(NewsStyle)`
     justify-content: flex-end;
     align-items: flex-start;
     img {
-      width: 20%;
+      width: 15%;
     }
   }
 `;

@@ -69,8 +69,8 @@ const HomeIntro = styled.div`
       }
     }
     .home-title2 {
+      margin-bottom: 2rem;
       h1 {
-        width: 40%;
         font-size: 4.5rem;
         letter-spacing: -2px;
       }
@@ -89,9 +89,9 @@ const Here = styled.div`
 const Point = styled(motion.div)`
   font-size: 9rem;
   position: relative;
-  right: 7%;
+  right: 3%;
   @media (max-width: 890px) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 `;
 
