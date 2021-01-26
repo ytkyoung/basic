@@ -14,7 +14,7 @@ import Thinking from './pages/Thinking';
 import Contact from './pages/Contact';
 import ServicesDetail from './pages/ServicesDetail';
 import Footer from './components/Footer';
-
+import Error from './components/Error';
 import Krisel from './components/Krisel';
 
 import { AnimatePresence } from 'framer-motion';
@@ -62,6 +62,7 @@ function App() {
             <Route path="/contact">
               <Contact theme={theme} />
             </Route>
+            <Route component={Error} />
           </Switch>
         </AnimatePresence>
         <Footer theme={theme} toggletheme={toggletheme} />
