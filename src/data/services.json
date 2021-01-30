@@ -12,13 +12,13 @@
           "video": true,
           "mainVideo": "images/Google-Store.mp4",
           "mainImg": "images/Beats.jpg",
-          "url": "/work/test1"
+          "url": "/work/google-store"
         },
         {
           "title": "Beats By Dre",
           "description": "ENGINEERING A DIGITAL DESTINATION THAT MOVES AT THE SPEED OF CULTURE",
           "mainImg": "images/Beats.jpg",
-          "url": "/work/test2"
+          "url": "/work/drDre"
         }
       ]
     },
@@ -34,14 +34,14 @@
           "description": "A WEB SERVICE TO MAKE SALES TRAINING FEEL LESS LIKE WORK AND MORE LIKE PLAY",
           "video": false,
           "mainImg": "images/Fender.jpg",
-          "url": "/work/test3"
+          "url": "/work/fender"
         },
         {
           "title": "American Express",
           "description": "LAYING A DESIGN FOUNDATION FOR FUTURE PRODUCTS AND SERVICES WITH THE OPEN APP",
           "video": false,
           "mainImg": "images/AMEX.jpg",
-          "url": "/work/test4"
+          "url": "/work/ae"
         }
       ]
     },
@@ -57,14 +57,14 @@
           "description": "REVITALIZING THE RIOT GAMES BRAND WITH AN UPGRADED DIGITAL EXPERIENCE",
           "video": false,
           "mainImg": "images/Riot.jpg",
-          "url": "/work/test5"
+          "url": "/work/riot"
         },
         {
           "title": "SoftBank Vision Fund",
           "description": "BUILDING A DIGITAL DESTINATION FOR THE LEADING TECH INVESTMENT FUND",
           "video": false,
           "mainImg": "images/Softbank.jpg",
-          "url": "/work/test6"
+          "url": "/work/softbank"
         }
       ]
     },
@@ -80,14 +80,14 @@
           "description": "DEVELOPING A BRAND THAT BROUGHT SCIENCE TO BEAUTY IN BOLD, UNEXPECTED WAYS",
           "video": false,
           "mainImg": "images/Nerd.jpg",
-          "url": "/work/test7"
+          "url": "/work/nerd"
         },
         {
           "title": "Brixton",
           "description": "HONORING THE PAST TO BUILD THE FUTURE OF THE BRIXTON BRAND",
           "video": false,
           "mainImg": "images/Brixton.jpg",
-          "url": "/work/test8"
+          "url": "/work/brixton"
         }
       ]
     }

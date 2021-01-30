@@ -40,11 +40,20 @@ const ServicesDetail = () => {
               <h2>{movie.title}</h2>
             </div>
             <div className="detail-box">
-              <div className="detail-img">
-                <img src={movie.pic} alt="movie" />
-                <img src={movie.pic} alt="movie" />
-                <img src={movie.pic} alt="movie" />
-              </div>
+              {movie.video ? (
+                <div className="detail-video">
+                  <video className="videoTag" autoPlay loop muted>
+                    <source src={movie.subvideo} type="video/mp4" />
+                  </video>
+                  <img src={movie.pic} alt="movie" />
+                </div>
+              ) : (
+                <div className="detail-img">
+                  <img src={movie.pic} alt="movie" />
+                  <img src={movie.pic} alt="movie" />
+                  <img src={movie.pic} alt="movie" />
+                </div>
+              )}
             </div>
             <Sec1 sektion={movie.title1} />
             <div className="detail-text">
@@ -103,6 +112,17 @@ const Headline = styled.div`
   .detail-box {
     display: flex;
   }
+  .detail-video {
+    display: flex;
+    margin-bottom: 4rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .detail-video video {
+    width: 100%;
+  }
   .detail-img {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -111,6 +131,7 @@ const Headline = styled.div`
     padding-bottom: 3rem;
     img {
       width: 100%;
+      object-fit: cover;
     }
     & img:nth-child(1) {
       scroll-snap-align: center;

@@ -34,12 +34,14 @@ class WorkServiceBox extends React.Component {
           >
             <div className="wrapper">
               {service.projects[0].video ? (
-                <video className="videoTag" autoPlay loop muted>
-                  <source
-                    src={service.projects[0].mainVideo}
-                    type="video/mp4"
-                  />
-                </video>
+                <Link to={service.projects[0].url}>
+                  <video className="videoTag" autoPlay loop muted>
+                    <source
+                      src={service.projects[0].mainVideo}
+                      type="video/mp4"
+                    />
+                  </video>
+                </Link>
               ) : (
                 <Link to={service.projects[0].url}>
                   <img src={service.projects[0].mainImg} alt="" />
