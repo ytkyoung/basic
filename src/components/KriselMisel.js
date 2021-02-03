@@ -5,8 +5,6 @@ const KriselMisel = () => {
 };
 
 const SpotTest = styled.section`
-  z-index: -2020;
-  height: 10vh;
   h1 {
     font-size: 4rem;
   }
@@ -15,13 +13,13 @@ const SpotTest = styled.section`
   } */
 
   &:after {
-    z-index: -200;
+    z-index: -1;
     animation: grain 8s steps(10) infinite;
     background-image: url(/images/img-noise-350x350.png);
     content: '';
     height: 300%;
     left: -50%;
-    opacity: 1;
+    opacity: 0.2;
     position: fixed;
     top: -110%;
     width: 200%;

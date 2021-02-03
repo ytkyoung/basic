@@ -19,7 +19,9 @@ class WorkServiceBox extends React.Component {
           <div className="learn">
             <h2>{service.title}</h2>
             <p>{service.text}</p>
-            <button>Learn more</button>
+            <button>
+              <Link to="/thinking">Learn more</Link>
+            </button>
           </div>
         </SlotNo1>
         <SlotNo2>

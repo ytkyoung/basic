@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const FlexTest = styled.section`
   height: 90vh;
@@ -95,7 +96,7 @@ export const Intro = styled.section`
 //   overflow: hidden;
 // `;
 
-export const NewsStyle = styled.div`
+export const NewsStyle = styled(motion.div)`
   border-top: 1px solid ${({ theme }) => theme.text};
   padding: 2.2rem 0rem 6.7rem 0rem;
   .news {

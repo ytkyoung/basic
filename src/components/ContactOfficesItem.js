@@ -1,11 +1,21 @@
 import styled from 'styled-components';
 
+import { motion } from 'framer-motion';
+import { fade } from '../animation';
+import { useScroll } from './useScroll';
+
 const ContactOfficesItem = (props) => {
   // console.log(props.office.id);
   // console.log(props.theme);
   // console.log('props.theme');
+  const [element, controls] = useScroll();
   return (
-    <OfficeStyle>
+    <OfficeStyle
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <SlotNo1>
         <h2>Office 0{props.office.id + 1}</h2>
       </SlotNo1>
@@ -30,7 +40,7 @@ const ContactOfficesItem = (props) => {
   );
 };
 
-const OfficeStyle = styled.div`
+const OfficeStyle = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;

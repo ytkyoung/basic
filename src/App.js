@@ -6,7 +6,10 @@ import { ThemeProvider } from 'styled-components';
 import { lighttheme, darktheme } from './theme';
 //Import pages
 import HomeStart from './pages/HomeStart';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
+
+import Navbar from './components/Nav/Navbar';
+
 import Work from './pages/Work';
 import About from './pages/About';
 import News from './pages/News';
@@ -37,8 +40,8 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme === 'light' ? lighttheme : darktheme}>
         <GlobalStyle />
-
-        <Nav theme={theme} toggletheme={toggletheme} />
+        {/* <Nav theme={theme} toggletheme={toggletheme} /> */}
+        <Navbar theme={theme} toggletheme={toggletheme} />
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
             <Route path="/" exact>

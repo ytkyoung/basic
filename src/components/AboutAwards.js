@@ -3,6 +3,7 @@ import data from '../data/awards.json';
 import AboutAwardsItem from '../components/AboutAwardsItem';
 import AboutAwardsMedia from '../components/AboutAwardsMedia';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const useMousePosition = () => {
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
@@ -32,7 +33,9 @@ const AboutAwards = () => {
           While results are what matter most, we believe awards bring value and
           recognition to organizations as well as individuals. full awardslist
         </p>
-        <button>full awardslist</button>
+        <button>
+          <Link to="/">Full awardslist</Link>
+        </button>
       </div>
       <div className="awards-list">
         {data.map(({ title, number }, index) => (

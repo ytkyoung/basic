@@ -3,6 +3,7 @@ import { NewsStyle } from '../styles.js';
 import { Link } from 'react-router-dom';
 import iconBlack from '../img/arrow-black.svg';
 import iconPink from '../img/arrow.svg';
+
 const NewsItem = (props) => {
   const isLight = props.theme === 'light';
 

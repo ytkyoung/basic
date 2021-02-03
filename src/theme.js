@@ -3,6 +3,8 @@ export const lighttheme = {
   body: '#f4f4f4',
   text: '#252422',
   title: '#252422',
+  nav: '#f4f4f4',
+  navwrapper: 'rgba(244, 244, 244, 0.95)',
   dotcenter: '#252422',
   button: '#ff1e00',
   buttonHover: '#f4f4f4',
@@ -12,9 +14,11 @@ export const lighttheme = {
 };
 
 export const darktheme = {
-  body: '#000000',
+  body: '#000',
   text: '#f9cdcd',
   title: '#f9cdcd',
+  nav: '#2F2F2F',
+  navwrapper: 'rgba(47, 47, 47, 0.95)',
   dotcenter: '#f9cdcd',
   button: '#003cff',
   buttonHover: '#252422',

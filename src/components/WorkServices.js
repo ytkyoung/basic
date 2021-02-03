@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import data from '../data/services.json';
 import WorkServicesBox from '../components/WorkServicesBox';
 
-console.log(data);
-
 const WorkServices = () => {
   return (
     <>

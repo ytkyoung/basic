@@ -88,6 +88,9 @@ const Follow = styled.section`
       background: transparent;
     }
   }
+  @media (max-width: 890px) {
+    display: none;
+  }
 `;
 
 export default ContactFollow;

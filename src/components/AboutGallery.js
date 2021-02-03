@@ -26,6 +26,7 @@ const AboutGallery = () => {
 const TestWrapper = styled.div`
   position: relative;
   height: 200vh;
+  border-bottom: 1px solid ${({ theme }) => theme.text};
   @media (max-width: 890px) {
     height: 100vh;
   }
