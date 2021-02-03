@@ -63,7 +63,7 @@ const Pos2 = styled.div`
   @media (max-width: 890px) {
     background: #722a72;
     top: 20%;
-    left: 8%;
+    left: 10%;
   }
 `;
 
@@ -80,7 +80,7 @@ const Pos3 = styled.div`
   @media (max-width: 890px) {
     background: #5c722a;
     top: 10%;
-    left: 22%;
+    left: 23%;
   }
 `;
 
@@ -97,7 +97,7 @@ const Pos4 = styled.div`
   @media (max-width: 890px) {
     background: #72502a;
     top: 35%;
-    left: 23%;
+    left: 22%;
   }
 `;
 

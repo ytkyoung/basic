@@ -27,8 +27,9 @@ const Box = styled.div`
   }
   @media (max-width: 890px) {
     background: #ff7b00;
+    padding: 1rem;
     .hover-image {
-      width: 250px;
+      width: 220px;
     }
   }
 `;
