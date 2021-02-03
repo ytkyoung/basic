@@ -28,7 +28,7 @@ const Box = styled.div`
   @media (max-width: 890px) {
     background: magenta;
     .hover-image {
-      width: 300px;
+      width: 250px;
     }
   }
 `;

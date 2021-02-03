@@ -30,7 +30,7 @@ const Box = styled.div`
   @media (max-width: 890px) {
     background: #00ffdd;
     .hover-image {
-      width: 300px;
+      width: 250px;
     }
   }
 `;
