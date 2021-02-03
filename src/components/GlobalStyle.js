@@ -191,14 +191,14 @@ const GlobalStyle = createGlobalStyle`
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: var(--special2-color);
+  color: ${({ theme }) => theme.body};
+  background: ${({ theme }) => theme.text};
   text-shadow: none;
 }
 
 ::selection {
-  color: #fff;
-  background: var(--special2-color);
+  color: ${({ theme }) => theme.body};
+  background: ${({ theme }) => theme.text};
   text-shadow: none;
 }
 
