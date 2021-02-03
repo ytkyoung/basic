@@ -91,7 +91,6 @@ const StyledNav = styled(motion.nav)`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0rem;
-    background: red;
   }
   /* position: sticky;
   top: 0;
@@ -106,7 +105,6 @@ const StyledNav = styled(motion.nav)`
     justify-content: space-around;
     align-items: center;
     flex: 1 1 60%;
-    background: green;
   }
   li {
     padding-left: 0rem;

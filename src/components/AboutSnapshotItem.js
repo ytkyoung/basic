@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { photoAnim } from '../animation';
+import { fade } from '../animation';
 import { useScroll } from './useScroll';
 
 const AboutSnapshotItem = (props) => {
@@ -8,7 +8,7 @@ const AboutSnapshotItem = (props) => {
     <>
       <motion.div
         className="snap-card"
-        variants={photoAnim}
+        variants={fade}
         animate={controls}
         initial="hidden"
         ref={element}

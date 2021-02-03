@@ -24,7 +24,7 @@ const AboutBrand = ({ theme }) => {
 const AboutBrandLogo = styled(motion.div)`
   padding: 5rem 0rem;
   width: 100%;
-
+  overflow: hidden;
   & img {
     width: 50%;
   }
