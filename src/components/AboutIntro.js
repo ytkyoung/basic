@@ -75,6 +75,10 @@ const AboutIntroStyle = styled.section`
       padding-top: 10%;
       align-self: flex-end;
     }
+    p {
+      width: 90%;
+      font-size: 2.5rem;
+    }
   }
 `;
 

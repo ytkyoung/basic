@@ -23,8 +23,8 @@ const AboutBrand = ({ theme }) => {
 
 const AboutBrandLogo = styled(motion.div)`
   padding: 5rem 0rem;
-
   width: 100%;
+
   & img {
     width: 50%;
   }
@@ -33,8 +33,9 @@ const AboutBrandLogo = styled(motion.div)`
     /* fill: white; */
   }
   @media (max-width: 890px) {
+    overflow: hidden;
     svg {
-      width: 450px;
+      width: 330px;
     }
   }
 `;

@@ -47,7 +47,7 @@ const SnapStyle = styled.div`
       width: 80%;
     }
   }
-  @media (max-width: 890px) {
+  @media (max-width: 690px) {
     flex-direction: column;
     .capa-title {
       flex: 1 1 100%;
