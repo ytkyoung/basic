@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import LogoAni from '../components/LogoAni2';
 import { motion } from 'framer-motion';
-import { scrollReveal } from '../animation';
+import { fade } from '../animation';
 import { useScroll } from './useScroll';
 
 const AboutBrand = ({ theme }) => {
@@ -10,7 +10,7 @@ const AboutBrand = ({ theme }) => {
   return (
     <>
       <AboutBrandLogo
-        variants={scrollReveal}
+        variants={fade}
         animate={controls}
         initial="hidden"
         ref={element}
