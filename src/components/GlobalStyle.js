@@ -1,6 +1,3 @@
-import SctoGroteskABold from '../fonts/SctoGroteskA-Bold.woff2';
-import SctoGroteskAMedium from '../fonts/SctoGroteskA-Medium.woff2';
-import SctoGroteskARegular from '../fonts/SctoGroteskA-Regular.woff2';
 
 import { createGlobalStyle } from 'styled-components';
 
@@ -28,22 +25,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  @font-face {
-    font-family: 'Scto Grotesk A Bold';
-    src: local('SctoGroteskA-Bold'), local('SctoGroteskA-Bold'),
-    url(${SctoGroteskABold}) format('woff2'),
-    }
-
-  @font-face {
-    font-family: 'Scto Grotesk A Medium';
-    src: local('SctoGroteskA-Medium'), local('SctoGroteskA-Medium'),
-    url(${SctoGroteskAMedium}) format('woff2'),
-    }
-  @font-face {
-    font-family: 'Scto Grotesk A Regular';
-    src: local('SctoGroteskA-Regular'), local('SctoGroteskA-Regular'),
-    url(${SctoGroteskARegular}) format('woff2'),
-    }
 
 
   html {
@@ -54,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     /* background: transparent; */
     overscroll-behavior: none;
     overflow-x: hidden;
