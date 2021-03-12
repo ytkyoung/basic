@@ -29,7 +29,7 @@ const NewsStyle = styled.section`
     padding-bottom: 3rem;
     h2 {
       text-transform: uppercase;
-      font-family: var(--font-bold);
+      font-weight: var(--font-bold);
     }
   }
 `;

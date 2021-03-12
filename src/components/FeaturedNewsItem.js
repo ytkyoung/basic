@@ -65,7 +65,7 @@ const FeaturedStyle = styled.div`
     h2 {
       text-transform: uppercase;
       line-height: 110%;
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
       font-weight: regular;
     }
   }
@@ -115,7 +115,7 @@ const FeaturedStyle = styled.div`
     }
     .news-category {
       h4 {
-        font-family: 'Scto Grotesk A Bold';
+        font-weight: normal;
       }
     }
     .news-info {

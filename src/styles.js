@@ -24,8 +24,7 @@ export const IntroPlane = styled.section`
     color: ${({ theme }) => theme.text};
     background: blue;
     font-size: 1.8rem;
-    font-family: var(--font-medium);
-    font-weight: medium;
+    font-weight: var(--font-medium);
   }
   @media (max-width: 890px) {
     height: 100%;
@@ -50,8 +49,7 @@ export const Intro = styled.section`
 
   & p {
     font-size: 1.8rem;
-    font-family: var(--font-medium);
-    font-weight: medium;
+    font-weight: var(--font-medium);
   }
   & div:nth-child(1) {
     flex: 1 1 50%;
@@ -123,8 +121,7 @@ export const NewsStyle = styled(motion.div)`
     h2 {
       text-transform: uppercase;
       line-height: 100%;
-      font-weight: 500;
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
     }
   }
   .news-box {

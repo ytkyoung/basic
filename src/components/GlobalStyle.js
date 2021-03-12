@@ -15,9 +15,9 @@ const GlobalStyle = createGlobalStyle`
   --special-color: #f4f4f4;
   --special2-color: #252422;
   --line-height: 2.3rem;
-  --font-bold: "Scto Grotesk A Bold";
-  --font-medium: "Scto Grotesk A Medium";
-  --font-regular: "Scto Grotesk A Regular";
+  --font-bold: bold;
+  --font-medium: medium;
+  --font-regular: normal;
   scroll-behavior: smooth;
 }
 
@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: var(--font-regular);
+    font-family: 'Inter', sans-serif;
     /* background: transparent; */
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -87,7 +87,6 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-weight: medium;
-    font-family: var(--font-bold);
     text-transform: uppercase;
     font-size: 12rem;
     line-height: 90%;
@@ -99,24 +98,24 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 3rem;
-    font-family: var(--font-bold);
+    font-weight: bold;
     line-height: 90%;
     color: ${({ theme }) => theme.text};
     letter-spacing: -0.07rem;
   }
   h3 {
     font-size: 2rem;
-    font-family: var(--font-regular);
+    font-weight: normal;
   }
   h4 {
     font-size: 1.4rem;
-    font-family: var(--font-regular);
+    font-weight: var(--font-regular);
     text-transform: uppercase;
     font-weight: 300;
   }
   h5 {
     font-size: 1.3rem;
-    font-family: var(--font-regular);
+    font-weight: var(--font-regular);
     text-transform: uppercase;
     font-weight: 300;
   }
@@ -124,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     font-size: 1.1rem;
     text-decoration: none;
-    font-family: var(--font-regular);
+    font-weight: var(--font-regular);
     color: ${({ theme }) => theme.text}
   }
 

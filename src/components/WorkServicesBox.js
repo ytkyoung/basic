@@ -124,7 +124,7 @@ const SlotNo2 = styled.div`
   p {
     padding-right: 2rem;
     width: 60%;
-    font-family: var(--font-medium);
+    font-weight: var(--font-medium);
   }
   .wrapper {
     overflow: hidden;
@@ -183,13 +183,13 @@ const SlotNo2 = styled.div`
     h3 {
       font-size: 1.8rem;
       padding-top: 2rem;
-      font-family: var(--font-bold);
+      font-weight: var(--font-bold);
     }
     p {
       font-size: 1.2rem;
       padding: 1rem 0rem;
       width: 60%;
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
       line-height: 1.3rem;
     }
   }

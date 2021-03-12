@@ -72,7 +72,7 @@ const ServiceStyle = styled.div`
         padding-top: 8rem;
         width: 80%;
         font-size: 2.1rem;
-        font-family: 'Scto Grotesk A Regular';
+        font-weight: var(--font-bold);
       }
       h3 {
         font-size: 1.1rem;

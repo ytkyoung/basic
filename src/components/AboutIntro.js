@@ -54,8 +54,7 @@ const AboutIntroStyle = styled.section`
 
   p {
     font-size: 3rem;
-    font-family: var(--font-medium);
-    font-weight: medium;
+    font-weight: var(--font-medium);
     line-height: 110%;
   }
   @media (max-width: 890px) {

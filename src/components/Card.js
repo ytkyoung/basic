@@ -55,7 +55,6 @@ const CardItem = styled.div`
   @media (max-width: 890px) {
     .card-title {
       h3 {
-        font-family: 'Scto Grotesk A Medium';
         padding: 5rem 0rem 1rem 0rem;
       }
     }

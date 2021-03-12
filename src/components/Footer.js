@@ -88,7 +88,7 @@ const FooterStyle = styled.footer`
     justify-content: space-between;
     align-items: center;
     h2 {
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
       font-size: 3rem;
     }
   }
@@ -110,7 +110,7 @@ const FooterStyle = styled.footer`
     flex: 1 2 50%;
     h2 {
       font-size: 2rem;
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
     }
   }
   .box1 {
@@ -138,7 +138,7 @@ const FooterStyle = styled.footer`
     justify-content: space-between;
     h2 {
       font-size: 2rem;
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
       letter-spacing: 0.1rem;
     }
     ul {
@@ -146,7 +146,7 @@ const FooterStyle = styled.footer`
     }
     ul li {
       font-size: 1.6rem;
-      font-family: var(--font-regular);
+      font-weight: var(--font-regular);
     }
     .offices {
       padding-right: 20%;
