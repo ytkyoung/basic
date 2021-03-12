@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle`
   --special-color: #f4f4f4;
   --special2-color: #252422;
   --line-height: 2.3rem;
+  --font-famliy: 'Poppins', sans-serif;
+  --font-brot: 'Roboto', sans-serif;
   --font-bold: bold;
   --font-medium: medium;
   --font-regular: normal;
@@ -35,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     /* width: 90%; */
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--font-famliy);
     /* background: transparent; */
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -121,6 +123,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 3rem 0rem;
     font-size: 1.8rem;
     line-height: 150%;
+    font-family: var(--font-brot);
     color: ${({ theme }) => theme.text};
   }
   input[type=text] {
